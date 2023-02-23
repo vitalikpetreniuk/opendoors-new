@@ -1,0 +1,5044 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+#wrapper
+	overflow: hidden
+
+#wrapper .container header .header_bottom .header_bottom-nav .sub-menu,
+.header_bottom-nav .sub-menu
+	display: none
+	position: absolute
+	top: 100%
+	left: 50%
+	width: 407px
+	background: #fff
+	border: 1px solid #000
+	border-top: 0
+	transform: translateX(-50%)
+	color: #ABABAB
+	z-index: 10
+
+#wrapper .container header .header_bottom .header_bottom-nav > ul > li:hover .sub-menu,
+.header_bottom-nav > ul > li:hover .sub-menu
+	display: flex
+	flex-wrap: wrap
+
+.header_bottom-nav .sub-menu li
+	width: 50%
+
+#wrapper .container header .header_bottom .header_bottom-nav .sub-menu a,
+#wrapper .container header .header_bottom .header_bottom-nav ul li.current-menu-item .sub-menu a,
+.header_bottom-nav .sub-menu a
+	display: block
+	padding: 15px
+	color: inherit
+	font-size: 14px
+	line-height: 18px
+	height: auto
+	text-transform: none
+	&:hover
+		color: #6B3267
+		background: rgba(107, 50, 103, 0.12)
+
+#wrapper .container header .header_bottom .header_bottom-nav .sub-menu li
+	padding: 0
+	border-top: 1px solid #000
+
+#wrapper .container header .header_bottom .header_bottom-nav .sub-menu .current-menu-item:after
+	display: none
+
+#wrapper .container header .header_bottom .header_bottom-nav ul li.current-menu-item .sub-menu .current-menu-item a,
+#wrapper .container header .header_bottom .header_bottom-nav .sub-menu .current-menu-item a
+	color: #6B3267
+	background: rgba(107, 50, 103, 0.12)
+
+.mobile-menu .sub-menu
+	display: none
+
+.mobile-menu > ul > li:hover .sub-menu
+	display: block
+
+.promo
+	position: relative
+
+#wrapper .container .odContent .promo .odBraveFaith
+	background: none
+	margin-top: 0
+	padding-top: 0
+
+#wrapper .container .odContent .promo .odBraveFaith .bf-section.right .bf-image
+	width: 43%
+	margin-right: 11%
+	.img-note
+		position: absolute
+		right: -59px
+		bottom: -41px
+		width: 223px
+		height: 177px
+
+#wrapper .container .odContent .promo .odBraveFaith .bf-section .bf-info
+	color: #21150B
+	margin-left: 110px
+	margin-top: -696px
+
+#wrapper .container .odContent .promo .odBraveFaith .pattern
+	left: 36.5%
+	width: auto
+	top: 13px
+
+#wrapper .container .odContent .promo .odBraveFaith .pattern.long
+	left: 24.5%
+	top: 78%
+	max-height: 400px
+	overflow: hidden
+
+.promo .title
+	margin: 0 0 40px
+
+.subtitle-note
+	position: relative
+	background: #F47A87
+	color: #fff
+	font-weight: normal
+	width: 429px
+	padding: 23px 28px
+	margin: 0 0 20px
+
+.subtitle-note:before
+	content: ''
+	position: absolute
+	top: -33px
+	left: 16px
+	width: 54px
+	height: 54px
+	border-radius: 500px
+	background: linear-gradient(180deg, #FFDAC1 0%, #F47A87 100%)
+
+.subtitle-note strong
+	font-size: 20px
+	line-height: 27px
+	position: absolute
+	top: -18px
+	left: 30px
+	color: #F47A87
+	text-transform: uppercase
+
+#wrapper .container .odContent .promo .odBraveFaith .bf-section .bf-info .bf-description
+	line-height: 18px
+
+#wrapper .container .odContent .promo .discover
+	bottom: 176px
+
+#wrapper .container .odContent .map-section .odCost
+	display: flex
+	padding-top: 0
+	margin: 67px 15px 0 -15px
+	background: none
+
+.map-section
+	margin: 0 0 165px
+	>.title
+		text-align: center
+#wrapper .container .odContent .worldwatch-list-section .map-section
+	margin-bottom: 108px
+#wrapper .container .odContent .worldwatch-list-section .map-section .odCost
+	margin-top: 30px
+.map-section .bf-logo
+	position: absolute
+	bottom: -136px
+	left: 286px
+	width: 235px
+	height: 240px
+
+#wrapper .container .odContent .map-section .odCost .pattern
+	top: 98.2%
+	right: 66px
+
+.map-section .text-block
+	width: 29%
+	background: rgba(95, 46, 104, 0.85)
+	color: #fff
+	padding: 47px 43px 124px 52px
+	font-size: 16px
+	line-height: 30px
+
+#wrapper .container .odContent .map-section .odCost .title
+	line-height: 52px
+	margin-bottom: 28px
+
+.map-section .text-block .custom-select
+	margin: 0 0 27px
+
+.map-section .text-block .custom-select span,
+.map-section .text-block .custom-select ul
+	border-color: #fff
+
+.map-section .text-block .custom-select ul li
+	border-color: rgba(95, 46, 104, 0.85)
+
+.map-section .text-block p
+	margin: 0 0 10px
+
+.custom-list
+	padding: 12px 0
+	li
+		position: relative
+		padding-left: 15px
+		&:before
+			content: ''
+			position: absolute
+			top: 12px
+			left: 6px
+			width: 4px
+			height: 2px
+			background: #F47986
+
+.select-result
+	margin: -5px 0 23px
+
+.select-result-color
+	display: inline-block
+	vertical-align: middle
+	width: 26px
+	height: 26px
+	border-radius: 5px
+	font-size: 0
+	margin-right: 12px
+	&.red
+		background: #C10000
+	&.orange
+		background: #EA6418
+	&.yellow
+		background: #F8D624
+
+.map-section .map-block
+	width: 71%
+
+#wrapper .container .odContent .map-section .odCost .map
+	background: linear-gradient(180deg, #F47A87 0%, #FAB59C 100%)
+	margin: 0 auto
+	min-height: 0
+	height: 579px
+	&:before
+		display: none
+
+.map-section .map .zoom
+	position: absolute
+	top: 0
+	right: 0
+	width: 69px
+	height: 69px
+	background: #6B3267 url(../img/icon-zoom.svg) no-repeat 50% 50%
+	font-size: 0
+	z-index: 3
+	.fancybox
+		display: block
+		width: 100%
+		height: 100%
+#modal-map .map
+	svg
+		position: relative
+		z-index: 2
+		display: block
+		width: 100%
+		margin-bottom: 0
+		path
+			fill: #6b3267
+			cursor: pointer
+			&:hover
+				fill: #87bcd2
+
+.map-info
+	display: flex
+	justify-content: space-between
+	max-width: 740px
+	margin: 0 auto
+	padding: 26px 15px
+	font-size: 16px
+	line-height: 21px
+	.item
+		width: 31%
+	.item-2
+		width: 45%
+		padding-right: 45px
+	.item-3
+		width: 24%
+	h5
+		font-size: 16px
+		line-height: 21px
+		font-weight: 700
+		margin: 0 0 19px
+	.select-result
+		margin-bottom: 20px
+
+.ranking-list
+	counter-reset: li
+	padding: 0
+	margin: 0
+	list-style: none
+	li
+		position: relative
+		padding: 0 0 21px 37px
+		&:before
+			counter-increment: li
+			content: counters(li,".")
+			width: 27px
+			height: 27px
+			color: #fff
+			background: #F47986
+			border-radius: 3px
+			text-align: center
+			line-height: 30px
+			position: absolute
+			top: -5px
+			left: 0
+
+.map-info-slider
+	position: relative
+	padding: 0 0 56px
+
+.map-info-slider .swiper-pagination
+	text-align: left
+
+.map-info-slider .swiper-pagination-bullet
+	width: 15px
+	height: 15px
+	border-radius: 0
+	background: #D9D9D9
+	opacity: 1
+
+.map-info-slider .swiper-pagination-bullet-active
+	background: #51255C
+
+.map-info-slider .swiper-pagination
+	margin: 0 -7px
+
+.map-info-slider .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+	margin: 0 7px
+
+#wrapper .container .odContent .map-section .odCost .map-info-slider .title
+	display: block
+	color: #51255C
+	font-size: 35px
+	line-height: 45px
+	margin-bottom: 5px
+
+.news-boxes
+	position: relative
+	h3
+		font-size: 24px
+		line-height: 32px
+		font-weight: 800
+		margin: 0 0 15px
+	.item
+		display: flex
+		min-height: 532px
+		background: #F2F2F2
+		font-size: 14px
+		line-height: 22px
+		padding: 15px
+		margin: 0 0 20px
+		.text
+			width: 57%
+			padding: 45px 18px 20px 15px
+		.img
+			position: relative
+			a
+				display: block
+				width: 266px
+				height: 501px
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					transition: .3s
+			a:hover:before
+				background: rgba(250,181,156,.6)
+			img
+				width: 100%
+				height: 100%!important
+				object-fit: cover	
+		.btn
+			min-width: 194px
+			margin: 20px 0 0
+			font-weight: 800
+			text-align: center
+	.news-boxes-prev,
+	.news-boxes-next
+		display: none
+	.pattern.long
+		height: 220px
+		bottom: -154px
+		right: 295px
+		overflow: hidden
+
+.title-description
+	width: 650px
+	margin: 23px auto 55px
+	text-align: center
+	line-height: 22px
+
+#wrapper .container .odContent .odNeeds.news-slider .post
+	text-align: center
+	line-height: 22px
+	font-weight: 600
+
+#wrapper .container .odContent .odNeeds.news-slider .content .post .image
+	margin: 0 0 15px
+
+#wrapper .container .odContent .odNeeds.news-slider .content .post .title
+	margin-bottom: 11px
+
+#wrapper .container .odContent .odNeeds.news-slider .content .post .description
+	margin-bottom: 19px
+
+#wrapper .container .odContent .odNeeds.news-slider .content .post .btn
+	background: #6B3267
+	color: #fff
+	border-left-width: 2px
+	text-align: center
+	padding-left: 30px
+	width: 207px
+	&:before
+		content: ""
+		display: block
+		width: 21px
+		height: 100%
+		background: #fff
+		position: absolute
+		left: 0
+	&:hover
+		background: #fab59c
+
+#wrapper .container .odContent .odNeeds .content .needs-next, 
+#wrapper .container .odContent .odNeeds .content .needs-prev
+	top: 111px	
+
+#wrapper .container .odContent .odNeeds.news-slider .content .needs-prev
+	left: -44px
+
+#wrapper .container .odContent .odNeeds.news-slider .content .needs-next
+	right: -44px
+
+.stories-section .title-description
+	line-height: 18px
+
+#wrapper .container .odContent .odNeeds.news-slider .content .news-slider-prev,
+#wrapper .container .odContent .odNeeds.news-slider .content .news-slider-next
+	top: 111px
+
+.stock-block
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	.item
+		display: flex
+		align-items: center
+		width: 49.5%
+		min-height: 265px
+		color: #fff
+		background: linear-gradient(3.32deg, #FBC6A2 2.55%, #F896A0 112.3%)
+		font-size: 14px
+		line-height: 26px
+		font-weight: 600
+		padding: 12px 15px 15px 30px
+		margin: 0 0 20px
+		position: relative
+		.text
+			width: 62%
+			p
+				max-width: 80%
+		.img
+			position: absolute
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+			img
+				max-width: 325px
+		.btn
+			min-width: 194px
+			font-weight: 800
+			text-align: center
+			&:hover
+				border-color: #fff
+				color: #fff		
+	.icon-stock
+		position: absolute
+		bottom: -23px
+		right: 172px
+		width: 104px
+		height: 104px
+		border-radius: 500px
+		color: #fff
+		font-size: 24px
+		line-height: 43px
+		font-weight: 800
+		padding: 30px 15px
+		background: linear-gradient(121.27deg, #DF9D06 21.94%, #E2C277 54.96%, #DF9D06 86.24%)
+		transform: rotate(11.67deg)
+	h3
+		font-size: 35px
+		line-height: 42px
+		font-weight: 800
+		margin: 0
+		color: #fff
+		a
+			color: inherit
+#wrapper .container .odContent .odNeeds.blog-slider
+	margin-top: 42px
+#wrapper .container .odContent .odNeeds.blog-slider .content
+	margin: 53px 15px 0
+	.post
+		.title
+			margin-bottom: 0
+			line-height: 36px
+			text-transform: uppercase
+		.description
+			line-height: 25px
+			margin-bottom: 22px
+		.image
+			height: 226px
+.blog-section
+	padding: 0 0 71px
+	position: relative
+	.pattern
+		bottom: -25px
+		left: 272px
+		img:last-child
+			display: none
+
+.blog-slider
+	.post
+		cursor: pointer
+		&:hover
+			.text-container
+				background: #F2F2F2
+			.description:after
+				background: url(../img/blur-gray.png) no-repeat 0 75px
+	.text-container
+		padding: 23px 20px 15px 26px
+		transition: .3s
+	.title
+		position: relative
+		z-index: 2
+	.description
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 178px
+			background: url(../img/blur.png) no-repeat 0 75px
+			transition: .3s
+	.post-info
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-size: 15px
+		font-weight: 700
+		.item
+			display: flex
+			align-items: center
+			width: 50%
+			&:last-child
+				justify-content: flex-end
+		a
+			color: #FD7E98
+			&:hover
+				color: #6B3267
+		.icon-view,
+		.icon-like,
+		.icon-dislike
+			margin-left: 25px
+		.icon-view
+			font-size: 20px
+			line-height: 20px
+		.icon-like a,
+		.icon-dislike a
+			display: block
+			font-size: 0
+			width: 17px
+			height: 17px
+		.icon-like a
+			background: url(../img/icon-like.svg) no-repeat
+			background-size: 100%
+			&:hover
+				background: url(../img/icon-like-hover.svg) no-repeat
+				background-size: 100%
+		.icon-dislike a
+			background: url(../img/icon-dislike.svg) no-repeat
+			background-size: 100%
+			&:hover
+				background: url(../img/icon-dislike-hover.svg) no-repeat
+				background-size: 100%
+	.blog-slider-prev,
+	.blog-slider-next
+		top: 216px
+	.blog-slider-prev
+		left: -60px
+	.blog-slider-next
+		right: -60px
+.blog-slider-pagination,
+.needs-pagination,
+.needs-pagination-2
+	display: none
+.mark
+	display: inline-block
+	background: #fff
+	color: #6B3267
+	padding: 5px 10px
+
+.videoblog-section
+	padding: 50px 0 0
+	.title
+		margin: 0 0 40px
+	&.bg-purple
+		.gallery-slider
+			background: linear-gradient(180deg, #6B3267 0%, #AF83AC 100%)
+			.mySwiper
+				background: #AF83AC
+				.img .datetime
+					background: #FD7E98
+		.video-block 
+			a:hover,
+			.mark
+				color: #F47A87
+.gallery-slider
+	width: 100%
+	position: relative
+	background: linear-gradient(180deg, #F47B87 0%, #FAB39B 100%)
+	color: #fff
+	padding: 15px 15px 50px
+	font-size: 14px
+	line-height: 18px
+	.video-slider
+		margin-top: 46px
+	.button-prev,
+	.button-next
+		width: 12px
+		height: 27px
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 1
+	.button-prev
+		left: -33px
+		background: url(../img/prev-accent.svg) no-repeat center
+		background-size: 16px 29px
+	.button-next
+		right: -33px
+		background: url(../img/next-accent.svg) no-repeat center
+		background-size: 16px 29px
+	.content
+		position: relative
+	.mySwiper2
+		height: 541px
+	.pattern
+		right: 227px
+		top: 477px
+	.mySwiper
+		margin: 0 -15px
+		padding: 20px 15px
+		background: #F47A87
+	.post
+		height: 300px
+		cursor: pointer
+		&:hover
+			h5
+				color: #F47A87
+			.img:before
+				background: rgba(250,181,156,.6)
+		h5
+			font-size: 14px
+			line-height: 18px
+			font-weight: 700
+			text-transform: uppercase
+			color: #6B3267
+			width: 150px
+		.post-time
+			position: absolute
+			bottom: 15px
+			left: 15px
+			color: #ABABAB
+	.img
+		width: 100%
+		height: 208px
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			transition: .3s
+		img
+			width: 100%
+			height: 100%!important
+			object-fit: cover
+		.datetime
+			position: absolute
+			bottom: 0
+			right: 0
+			background: #6B3267
+			color: #fff
+			padding: 2px 3px 0
+			text-align: center
+			line-height: 15px
+	.post-text
+		display: flex
+		justify-content: space-between
+		background: #fff
+		color: #21150B
+		line-height: 18px
+		.item
+			width: 55%
+			padding: 19px 15px
+			position: relative
+			&:first-child
+				width: 44%
+				&:before
+					display: none
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 1px
+				height: 100%
+				background: #f47a87
+		p
+			display: -webkit-box
+			-webkit-line-clamp: 3
+			-webkit-box-orient: vertical
+			overflow: hidden
+	.slider-title
+		font-size: 24px
+		line-height: 32px
+		font-weight: 700
+		padding: 0 30px
+	.fancybox
+		display: none
+.video-block
+	display: flex
+	justify-content: space-between
+	a
+		color: #D2D7DB
+		text-decoration: underline
+		&:hover
+			color: #6B3267
+			text-decoration: none	
+	.mark
+		color: #6B3267
+		margin: 8px 0 20px
+	h3
+		font-size: 35px
+		line-height: 46px
+		font-weight: 700
+		margin: 0 0 23px
+	.text
+		width: 33%
+		padding: 50px 25px 15px 30px
+		position: relative
+		.post-time
+			position: absolute
+			bottom: -3px
+			right: 15px
+	.video
+		width: 853px
+		height: 487px
+		iframe
+			display: block
+			width: 100%
+			height: 100%
+	.stayInTouch
+		margin: 30px 0
+		ul
+			display: flex
+			align-items: center
+		li
+			margin: 0 8px 5px 0
+		a
+			display: block
+			width: 27px
+			height: 27px
+			background: #fff
+			color: #f7928f
+			line-height: 27px
+			border-radius: 500px
+			text-align: center
+			position: relative
+			&:hover
+				top: -2px
+			svg
+				width: 15px
+				height: 15px
+.act-section
+	.title
+		margin: 0 0 51px
+.news-boxes-links
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin: 0 0 50px
+	position: relative
+	h3, h3.title
+		font: normal 50px/50px 'LeituraNews-Roman4',sans-serif
+		color: inherit
+		text-transform: none
+		margin: 0 0 25px
+		a
+			color: inherit
+			span
+				display: none
+	.item
+		display: flex
+		width: 49.5%
+		color: #fff
+		background: linear-gradient(180deg, #6B3267 0%, #AF83AC 100%)
+		font-size: 14px
+		line-height: 25px
+		text-align: center
+		margin: 0 0 15px
+		.text
+			width: 50%
+			padding: 38px 25px 15px
+			&.text-vertical-center
+				display: flex
+				align-items: center
+				padding-top: 0
+		.img
+			position: relative
+			> a
+				display: block
+				width: 333px
+				height: 100%
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					transition: .3s
+			> a:hover:before
+				background: rgba(250,181,156,.6)
+			img
+				width: 100%
+				height: 100%!important
+				object-fit: cover
+		.img-mobile
+			display: none		
+		.bf-logo
+			width: 158px
+			height: 161px
+			margin: 4px auto
+		.btn
+			min-width: 194px
+			font-weight: 800
+			text-align: center
+			color: #fff
+			border-color: #fff
+			&:hover
+				color: #F47986
+				border-color: #F47986
+		&.vertical
+			flex-wrap: wrap
+			text-align: left
+			.text
+				width: 100%
+				padding: 15px 15px 15px 50px
+				p
+					max-width: 365px
+			.img
+				width: 100%
+				height: 271px
+				> a
+					width: 100%
+					height: 100%
+		&.bg-pink
+			background: #F47986
+			.btn
+				&:hover
+					color: #6B3267
+					border-color: #6B3267
+	.pattern
+		&.top
+			top: -39px
+			right: 127px
+		&.bottom
+			bottom: -24px
+			left: 138px
+	&.only-one
+		.item
+			width: 100%
+			background: none
+			text-align: left
+			color: #6B3267
+			.text
+				width: 49.5%
+				background: url(../img/bg-gray.jpg) no-repeat 50% 50%
+				background-size: cover
+				padding: 20px 120px 10px 50px
+			h3
+				margin: 0 0 15px
+				.mark
+					font-style: italic
+					font-weight: 800
+					padding: 10px 10px 0
+			.img
+				width: 50.5%
+				min-height: 270px
+				> a
+					width: 100%
+			.btn
+				color: #6B3267
+				border-color: #6B3267
+				&:hover
+					color: #f47986
+					border-color: #f47986
+		.pattern.long
+			top: 167px
+			left: 37%
+	&.other-boxes
+		.item
+			width: 66.3%
+			text-align: left
+			.text
+				width: 57.5%
+				padding: 142px 20px 20px 50px
+				p
+					max-width: 68%
+			.img
+				> a
+					width: 371px
+		.only-picture
+			width: 32.5%
+			text-align: center
+			.img
+				width: 100%
+			.text
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				padding: 54px 65px
+				p
+					max-width: 100%
+			h3
+				font-size: 40px
+				line-height: 40px
+				margin: 0 0 15px
+				&.title-large
+					font-size: 86px
+					line-height: 90px
+.news-inner-section
+	max-width: 1095px
+	margin: 0 auto
+	~ .odNeeds.needs-top
+		margin-bottom: 50px
+.visual-section
+	margin: 0 0 38px
+	position: relative
+	.text
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		color: #fff
+	.btn-back
+		position: absolute
+		top: 35px
+		left: 54px
+		color: inherit
+		padding: 6px
+		padding-left: 21px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			background: url(../img/arrow-left.svg) no-repeat
+			background-size: 100%
+			width: 12px
+			height: 29px
+			transition: .3s
+		&:hover
+			color: #FAB59C
+			&:before
+				background: url(../img/arrow-left-hover.svg) no-repeat
+				background-size: 100%
+	.stayInTouch
+		position: absolute
+		top: 25px
+		right: 22px
+		li
+			text-align: center
+			margin: 0 0 20px
+		a svg g rect
+			transition: .3s
+		a:hover svg g rect
+			fill: #FAB59C
+	.inner-text
+		position: absolute
+		bottom: 20px
+		left: 0
+		width: 100%
+		max-width: 1110px
+		padding: 10px 20px 10px 53px
+		.top-text
+			position: relative
+			padding-left: 22px
+			margin: 0 0 4px 8px
+			img
+				width: 14px
+				position: absolute
+				top: 0
+				left: 0
+	h1
+		font: normal 86px/86px 'LeituraNews-Roman4',sans-serif
+	.list-links
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		padding: 7px 14px
+		display: flex
+		justify-content: flex-end
+		color: rgba(255, 255, 255, 0.38)
+		li
+			margin-left: 3px
+		a
+			color: inherit
+			&:hover
+				color: #fff
+#wrapper .container .odContent .news-description-block .pattern
+	position: static
+	width: 291px
+	margin: 0 0 26px
+.news-description-block
+	display: flex
+	justify-content: space-between
+	.content-block
+		width: 80%
+	.new
+		line-height: 25px
+		color: #272C49
+		margin: 10px 0 50px
+		&:first-child
+			.title
+				margin: 0 0 20px
+			.post-info
+				padding-bottom: 27px
+				.design
+					font-size: 16px
+					line-height: 25px
+		p
+			margin: 0 0 25px
+		.post-info
+			display: flex
+			justify-content: space-between
+			align-items: center
+			font-size: 16px
+			font-weight: 700
+			padding: 10px 0
+			.item
+				display: flex
+				align-items: center
+				width: 50%
+				&:last-child
+					justify-content: flex-end
+			a
+				color: #FD7E98
+				&:hover
+					color: #6B3267
+			time
+				color: #FD7E98
+			.design
+				font-size: 24px
+				line-height: 38px
+				color: #FD7E98
+			.icon-view,
+			.icon-like,
+			.icon-dislike
+				margin-left: 30px
+			.icon-view
+				font-size: 21px
+				line-height: 21px
+			.icon-like a,
+			.icon-dislike a
+				display: block
+				font-size: 0
+				width: 17px
+				height: 17px
+			.icon-like a
+				background: url(../img/icon-like.svg) no-repeat
+				background-size: 100%
+				&:hover
+					background: url(../img/icon-like-hover.svg) no-repeat
+					background-size: 100%
+			.icon-dislike a
+				background: url(../img/icon-dislike.svg) no-repeat
+				background-size: 100%
+				&:hover
+					background: url(../img/icon-dislike-hover.svg) no-repeat
+					background-size: 100%
+	.title
+		line-height: 52px
+		margin: 0 0 27px
+	.aside-block
+		width: 19%
+		.banner
+			background: #F2F2F2
+			color: #AF83AC
+			text-align: center
+			margin: 0 0 20px
+			>a:hover
+				opacity: .8
+			&-info
+				padding: 15px 9px
+			h3
+				font-size: 24px
+				line-height: 32px
+				font-weight: 800
+				text-transform: uppercase
+				margin: 0 0 13px
+			.btn
+				font-weight: 800
+.banner-list
+	column-count: 2
+	column-fill: auto
+	height: 230px
+	color: #AF83AC
+	font-size: 12px
+	line-height: 15px
+	text-transform: uppercase
+	text-align: left
+	margin: 0 0 4px
+	li
+		padding-left: 10px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 5px
+			left: 0
+			width: 2px
+			height: 2px
+			border-radius: 50px
+			background: #AF83AC
+	a
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+.bg-pink-box
+	background: url(../img/bg-pink-box.jpg) no-repeat
+	background-size: cover
+	padding: 41px 15px
+	margin: 50px 0
+	.title
+		margin: 0 0 30px
+	.inner-text
+		display: flex
+		justify-content: space-between
+		.image
+			width: 43.7%
+			height: 315px
+			img
+				width: 100%
+				height: 100% !important
+				object-fit: cover
+		.text
+			display: flex
+			justify-content: space-between
+			width: 54.8%
+			.boxes
+				width: 49%
+				.box
+					background: #fff
+					color: #6B3267
+					text-align: center
+					padding: 30px 25px
+					margin: 0 0 37px
+					position: relative
+					&:last-child
+						margin: 0
+					.num
+						position: absolute
+						top: -28px
+						left: 50%
+						transform: translateX(-50%)
+						background: #F47A87
+						color: #fff
+						width: 54px
+						height: 54px
+						border-radius: 50px
+						font-size: 20px
+						line-height: 54px
+						text-align: center
+.bg-gray-box
+	background: url(../img/bg-gray-large.jpg) no-repeat
+	background-size: cover
+	padding: 15px
+	margin: 53px 0
+	.title
+		margin: 0 0 19px
+	.inner-text
+		display: flex
+		justify-content: space-between
+		.image
+			width: 38.7%
+			height: 501px
+			img
+				width: 100%
+				height: 100% !important
+				object-fit: cover
+		.text
+			width: 60%
+			padding: 18px 15px
+		.list
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			line-height: 22px
+			font-weight: 700
+			li
+				width: 48%
+				margin: 0 0 39px
+			p
+				margin: 0 0 5px
+			.mark
+				background: none
+				padding: 0
+		.btn
+			width: 194px
+			text-align: center
+.news-gallery
+	display: flex
+	flex-wrap: wrap
+	img
+		width: auto
+		margin: 0 15px 15px 0
+.btn-scroll
+	font-size: 0
+	background: url(../img/btn-scroll.png) no-repeat
+	width: 52px
+	height: 52px
+	position: fixed
+	bottom: 20px
+	right: 15px
+	cursor: pointer
+	display: none
+	transition: .3s
+	z-index: 60
+	&:hover
+		opacity: .8
+#wrapper .container .odContent .brave-faith-section .odEvent:first-child,
+#wrapper .container .odContent .brave-faith-section .odEvent .content
+	margin-top: 0
+#wrapper .container .odContent .brave-faith-section .odEvent
+	margin-top: 50px
+#wrapper .container .odContent .brave-faith-section .odEvent .pattern
+	top: 40%
+	max-height: 108%
+#wrapper .container .odContent .brave-faith-section .promo .odBraveFaith .pattern
+	top: auto
+	bottom: -29px
+	left: auto
+	right: 22px
+.brave-faith-section .odEvent .btn
+	border-color: #FAB59C
+	color: #FAB59C
+	margin: 19px 0
+	&:hover
+		border-color: #6b3267
+		color: #6b3267
+#wrapper .container .odContent .brave-faith-section .promo .odBraveFaith .bf-section .bf-info
+	margin-top: -560px
+.brave-faith-section .promo
+	padding: 26px 0
+.brave-faith-section .promo .title
+	margin: 0 0 22px
+#wrapper .container .odContent .odBraveFaith .bf-section.right .bf-image .smile-1,
+.smile-1
+	width: 194px
+	height: 185px
+#wrapper .container .odContent .odBraveFaith .bf-section.right .bf-image .smile-2,
+.smile-2
+	width: 190px
+	height: 171px
+.promo .bf-image .smile-1,
+#wrapper .container .odContent .brave-faith-section .odBraveFaith .bf-section.right .bf-image .smile-1
+	position: absolute
+	top: -44px
+	left: -85px
+	width: 194px
+	height: 185px
+.promo .bf-image .smile-2,
+#wrapper .container .odContent .brave-faith-section .odBraveFaith .bf-section.right .bf-image .smile-2
+	position: absolute
+	bottom: 178px
+	right: -110px
+	width: 190px
+	height: 171px
+	cursor: pointer
+#wrapper .container .odContent .brave-faith-section .promo .odBraveFaith .bf-section .bf-info .bf-description
+	line-height: 25px
+.brave-faith-section .promo .bf-info p
+	margin: 0 0 30px
+.promo .bf-info .mark
+	background: none
+	padding: 0
+	color: #F47A87
+	font-size: 20px
+	line-height: 26px
+	text-transform: uppercase
+.columns-info
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin: 97px 0 37px
+	.column
+		width: 49.5%
+.article-column
+	background: linear-gradient(180deg, #FBC6A2 0%, #F47986 100%)
+	padding: 21px 15px 15px
+	font-size: 16px
+	line-height: 29px
+	position: relative
+	.pattern
+		top: 82%
+		right: 33px
+	.content-text
+		background: #fff
+		padding: 14px 40px 66px
+	.title
+		font-size: 20px
+		line-height: 26px
+		text-align: center
+		margin: 40px 0 23px
+		&:first-child
+			margin: 0 0 30px
+	p
+		margin: 0 0 21px
+	.image-text-1
+		float: right
+		width: 150px
+		margin: -30px 8px 0
+	.image-text-2
+		float: left
+		width: 227px
+		margin: -79px 0 -60px -152px
+	.list
+		color: #F47A87
+		margin: -11px 58px 17px
+		li
+			padding: 0 0 0 13px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 11px
+				left: 0
+				width: 3px
+				height: 3px
+				border-radius: 50px
+				background: #F47A87
+	p.list-mark
+		margin-left: 57px
+	.smile-1
+		width: 241px
+		margin: -60px 0 -92px -175px
+		position: relative
+		z-index: 1
+/* ACCORDION */
+.accordion
+	font-size: 20px
+	line-height: 36px
+	p
+		margin: 0 0 1px
+	.accordion-slide
+		display: none
+		padding: 39px 0 17px
+	.opener
+		text-decoration: underline
+		color: #F47A87
+		display: block
+	> li.active .opener,
+	.opener:hover
+		text-decoration: none
+.form-column
+	background: #F2F2F2
+	color: #000
+	padding: 35px 20px 35px 53px
+	font-size: 16px
+	line-height: 29px
+	position: relative
+	.pattern
+		top: 23.6%
+		right: 67px
+	.title
+		font-size: 20px
+		line-height: 26px
+		text-align: center
+		margin: 0 0 24px
+	small
+		font-size: 14px
+		line-height: 18px
+	p
+		margin: 20px 0
+	.start-text
+		margin: 0 0 45px
+	.text-short
+		max-width: 435px
+		margin: 15px 0
+/* FORM */
+.user-form
+	.mark
+		background: none
+		padding: 0
+		font-size: 20px
+	.custom-select
+		display: inline-block
+		margin: 0 0 11px
+		span
+			display: inline-block
+			min-width: 63px
+			border: 2px solid #6B3267
+			color: #6B3267
+			&:after
+				display: none
+		ul
+			border: 2px solid #6B3267
+			border-top: 0
+			li
+				border-bottom: 2px solid #6B3267
+				padding: 3px 10px
+				&.active,
+				&:hover
+					background: #6B3267
+					color: #fff
+	.wrap-input
+		margin: 0 0 17px
+	input
+		background: none
+		color: #6B3267
+		border: 2px solid #6B3267
+		width: 350px
+		padding: 4px 15px 0
+		font-size: 20px
+		line-height: 35px
+		&::-webkit-input-placeholder
+			color: #6B3267
+			font-size: 20px
+		&::-moz-placeholder
+			opacity: 1
+			color: #6B3267
+			font-size: 20px		
+		&:-moz-placeholder
+			color: #6B3267
+			font-size: 20px		
+		&:-ms-input-placeholder
+			color: #6B3267
+			font-size: 20px		
+		outline: none
+		&:-webkit-autofill
+			-webkit-box-shadow: inset 0 0 0 50px #fff !important
+			-webkit-text-fill-color: #6B3267 !important
+			color: #6B3267 !important
+	.btn
+		min-width: 207px
+		background: #6b3267
+		color: #fff
+		border-color: #6b3267
+		border-left-width: 2px
+		padding-left: 36px
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 23px
+			height: 100%
+			background: #fff
+		&:hover
+			background: #fbc6a2
+			border-color: #fbc6a2
+			color: #fff
+/* Custom Checkbox */
+.custom-checkbox
+	display: flex
+	flex-wrap: wrap
+	margin: 0 0 31px
+	.checkbox-container
+		display: block
+		position: relative
+		padding: 0 50px 0 30px
+		margin-bottom: 12px
+		cursor: pointer
+		font-size: 16px
+		line-height: 23px
+		user-select: none
+		&:hover input ~ .checkmark 
+			background: #ccc
+		input
+			position: absolute
+			height: 0
+			opacity: 0
+			cursor: pointer
+			&:checked ~ .checkmark
+				background: #F47A87
+				border-color: #F47A87
+				&:after
+					display: block
+		.checkmark
+			position: absolute
+			top: 0
+			left: 0
+			height: 22px
+			width: 22px
+			border: 2px solid #6B3267
+			&:after
+				content: ""
+				position: absolute
+				display: none
+				top: 2px
+				left: 2px
+				width: 15px
+				height: 15px
+				background: url(../img/icon-check.svg) no-repeat
+				background-size: 100%
+#wrapper .container .odContent .brave-faith-section .odDouble
+	justify-content: space-between
+	padding: 0
+	max-width: 1095px
+	margin: 0 auto 73px
+#wrapper .container .odContent .odDouble .odPrayers.pink-block
+	width: 430px
+	background: linear-gradient(90deg, #F47A87 -39.16%, #FFDAC1 100%)
+	.content
+		.title
+			color: #51255C
+		.description
+			margin: 10px 0 15px
+			padding: 0 5px
+	.pattern
+		top: -46px
+		right: -89px
+#wrapper .container .odContent .odDouble .odPrayers.pink-block .content form input[type=text]
+	background: #6B3267
+#wrapper .container .odContent .odDouble .odPrayers.pink-block .custom-select
+	span,
+	ul,
+	ul li
+		border-color: #6B3267
+		color: #6B3267
+		&:after
+			background: url(../img/arrow-down-purple.svg) no-repeat center
+			background-size: contain
+	+ p span
+		background: #6B3267
+#wrapper .container .odContent .brave-faith-section .odDouble .odStories
+	width: 58%
+	position: relative
+	margin: 58px 0 0
+	.pattern
+		top: 69%
+		left: -56px
+	.post
+		display: flex
+		justify-content: space-between
+		line-height: 22px
+		.new
+			margin: 0 0 22px
+		.title
+			font-weight: 600
+			margin: 0 0 20px
+		p
+			margin: 0 0 23px
+		.image
+			width: 50%
+		.text
+			width: 47%
+	.btn.more
+		background: #6b3267
+		color: #fff
+		border-color: #6b3267
+		border-left-width: 2px
+		padding-left: 36px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 23px
+			height: 100%
+			background: #fff
+		&:hover
+			background: #FBC6A2
+			border-color: #FBC6A2
+.title.center
+	text-align: center
+.btn-go
+	color: #6B3267
+	margin: -11px 0 19px
+	.btn-back
+		display: inline-block
+		color: inherit
+		padding: 6px
+		padding-left: 21px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			background: url(../img/arrow-left-purple.svg) no-repeat
+			background-size: 100%
+			width: 12px
+			height: 29px
+			transition: .3s
+		&:hover
+			color: #FAB59C
+			&:before
+				left: -2px
+				background: url(../img/arrow-left-pink.svg) no-repeat
+				background-size: 100%
+.basket-form
+	padding: 29px 0
+	.basket-list
+		color: #ABABAB
+		li
+			display: flex
+			justify-content: space-between
+			padding: 40px 0
+			border-top: 1px solid #ABABAB
+			background: #fff
+			min-height: 191px
+			transition: .3s
+			&:last-child
+				border-bottom: 1px solid #ABABAB
+			&:hover
+				background: #F2F2F2
+		.basket-title-description
+			border: none
+			padding: 0
+			text-transform: uppercase
+			font-size: 12px
+			min-height: 0
+			p
+				margin: 0 0 3px
+			.basket-total
+				min-height: 0
+		.basket-product
+			width: 10%
+		.basket-description
+			width: 35%
+			.color-text
+				color: #75747B
+				margin: 0 0 18px
+		.basket-quantity
+			width: 32%
+		.basket-total
+			min-height: 106px
+			margin-right: 15px
+			position: relative
+		.wrap-img
+			display: block
+			text-decoration: none
+			color: inherit
+			width: 100px
+			height: 100%
+			margin: 0 24px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				transition: .3s
+			&:hover:before
+				background: rgba(250,181,156,.6)
+			img
+				width: 100%
+				height: 100% !important
+				object-fit: cover
+		.title
+			display: block
+			font-size: 16px
+			line-height: 16px
+			text-transform: none
+			color: #121212
+			margin: 0 0 20px
+			a
+				text-decoration: none
+				color: inherit
+				&:hover
+					color: #f47a87
+		.custom-checkbox
+			margin: 0 0 10px
+			.checkbox-container
+				padding: 0
+				.checkmark
+					&.black
+						background: #000
+					&.purple
+						background: #6B3267
+					&.pink
+						background: #F47A87
+					&.blue
+						background: #3C5A9A
+					&.white
+						background: #fff
+				input:checked~.checkmark
+					&:after
+						display: none
+					&.black
+						border-color: #000
+					&.purple
+						border-color: #6B3267
+					&.pink
+						border-color: #F47A87
+					&.blue
+						border-color: #3C5A9A
+					&.white
+						border-color: #ccc
+			&.color
+				.checkbox-container
+					padding-left: 19px
+				.checkmark
+					border: 1px solid #F2F2F2
+					width: 17px
+					height: 17px
+			&.size
+				margin: 0
+				.checkbox-container
+					padding-left: 30px
+					&:hover input~.checkmark
+						background: #6B3267
+						color: #fff
+					input:checked~.checkmark
+						background: #6B3267
+						border-color: #6B3267
+						color: #fff
+				.checkmark
+					background: #fff
+					border: 1px solid #6B3267
+					color: #6B3267
+					text-align: center
+					font-size: 14px
+					line-height: 19px
+					font-weight: 600
+					width: 26px
+					height: 18px
+		.basket-del
+			display: block
+			background: url(../img/icon-clouse-pink.svg) no-repeat
+			background-size: 100%
+			font-size: 0
+			width: 20px
+			height: 20px
+			&:hover
+				background: url(../img/icon-clouse-purple.svg) no-repeat
+				background-size: 100%
+		.price
+			position: absolute
+			bottom: 0
+			right: 0
+			color: #F47A87
+			letter-spacing: 0.025em
+			font-size: 26px
+			line-height: 14px
+			font-weight: 600
+	.basket-result
+		text-align: right
+		p
+			margin: 0 0 12px
+		.btn
+			width: 195px
+			&.more
+				width: 214px
+				background: #6B3267
+				color: #fff
+				border-left-width: 2px
+				text-align: left
+				padding-left: 35px
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 23px
+					height: 100%
+					background: #fff
+				&:hover
+					border-color: #fab59c
+					background: #fab59c
+					color: #fff
+	.price-result
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		padding: 32px 0 18px
+		.text
+			color: #21150B
+			font-size: 14px
+			line-height: 14px
+			font-weight: 600
+			margin-right: 15px
+		.cost
+			color: #F47A87
+			font-size: 26px
+			line-height: 26px
+			font-weight: 800
+			letter-spacing: 0.025em
+.product-info-section
+	display: flex
+	justify-content: space-between
+	max-width: 1095px
+	margin: 0 auto 81px
+	.product-info-slider
+		width: 430px
+	.product-info-text
+		width: 57%
+	.basket-form
+		.basket-list
+			li
+				border: none
+				padding: 25px 0
+				&:hover
+					background: none
+			.basket-description .color-text
+				margin: 0 0 23px
+			.basket-total
+				margin-right: 0
+			.custom-checkbox.size
+				margin: 0 0 36px
+			.price
+				font-size: 40px
+				line-height: 22px
+		.basket-result
+			padding: 5px 0
+			.btn + .btn
+				margin-left: 20px
+.product-info-slider
+	position: relative
+	.swiper-slide
+		position: relative
+		img
+			width: 429px
+			height: 544px !important
+			object-fit: cover
+	.swiper-pagination
+		bottom: -27px
+	.swiper-pagination-bullet
+		width: 11px
+		height: 11px
+		border: 1px solid #6B3267
+		background: #fff
+		border-radius: 0
+		opacity: 1
+	.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+		margin: 0 1px
+	.swiper-pagination-bullet-active
+		background: #6B3267
+	.icon-like
+		position: absolute
+		top: 18px
+		left: 18px
+		width: 13px
+		height: 13px
+		background: url(../img/icon-heart.svg) no-repeat
+		background-size: 100%
+		font-size: 0
+.product-info-text
+	.basket-form
+		padding: 0
+		.title
+			margin: 0 0 30px
+		p
+			line-height: 22px
+.added-goods-modal
+	position: fixed
+	bottom: 0
+	right: 0
+	z-index: 65
+	width: 352px
+	min-height: 234px
+	background: #FAB59C
+	color: #fff
+	font-size: 16px
+	line-height: 22px
+	.added-goods-modal-content
+		padding: 50px 28px 15px
+		position: relative
+	.title
+		text-align: center
+		font-size: 20px
+		line-height: 26px
+		font-weight: 700
+		color: #fff
+		margin: 0 -10px 20px
+	.inner-text
+		display: flex
+		.image
+			margin-right: 15px
+			img
+				width: 100px
+				height: 100px !important
+				object-fit: cover
+		.title
+			font-size: 16px
+			line-height: 16px
+			letter-spacing: 0.025em
+			text-transform: none
+			margin: 0 0 10px
+		.custom-checkbox-list
+			margin: 0 0 7px
+		.price
+			font-size: 20px
+			line-height: 32px
+			font-weight: 600
+	.btn-back
+		position: absolute
+		bottom: -11px
+		right: 11px
+		color: #6B3267
+		font-size: 14px
+		padding: 6px
+		padding-right: 16px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			background: url(../img/arrow-right-purple.svg) no-repeat
+			background-size: 100%
+			width: 12px
+			height: 29px
+			transition: .3s
+		&:hover
+			color: #fff
+			&:before
+				right: -2px
+				background: url(../img/arrow-right-white.svg) no-repeat
+				background-size: 100%
+	.btn-clouse
+		position: absolute
+		top: 0
+		right: 0
+		width: 38px
+		height: 38px
+		font-size: 0
+		background: #fff url(../img/icon-clouse-pink.svg) no-repeat
+		background-position: 50% 50%
+		border: 2px solid #FAB59C
+		&:hover
+			opacity: 0.8
+
+#wrapper .container .odContent .odNeeds.goods-slider .content
+	margin-top: 50px
+.goods-slider,
+.goods-slider-collection
+	position: relative
+	.goods-post
+		line-height: 22px
+		width: 207px
+		margin: 0 auto
+		.image
+			height: 267px
+			a
+				display: block
+				width: 100%
+				height: 100%
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					transition: .3s
+				&:hover:before
+					background: rgba(250,181,156,.6)
+				img
+					width: 100%
+					height: 100% !important
+					object-fit: cover
+				.icon-like
+					position: absolute
+					top: 6px
+					left: 7px
+					width: 13px
+					height: 13px
+					background: url(../img/icon-heart.svg) no-repeat
+					background-size: 100%
+					font-size: 0
+				.custom-checkbox-list
+					position: absolute
+					bottom: 17px
+					left: 50%
+					transform: translateX(-50%)
+		.text-container
+			padding: 20px 10px
+			text-align: center
+			position: relative
+		.title
+			font-size: 20px
+			line-height: 26px
+			font-weight: 600
+		.custom-checkbox-list
+			justify-content: center
+		.price
+			display: flex
+			align-items: baseline
+			justify-content: center
+			.price-new
+				font-size: 24px
+				line-height: 38px
+				font-weight: 600
+				color: #F47A87
+			.price-old
+				font-size: 16px
+				line-height: 16px
+				font-weight: 600
+				color: #ABABAB
+				text-decoration: line-through
+	.swiper
+		margin: 0 0 28px
+	.swiper-pagination-bullet
+		width: 11px
+		height: 11px
+		border: 1px solid #6B3267
+		background: #fff
+		border-radius: 0
+		opacity: 1
+	.swiper-pagination-horizontal.swiper-pagination-bullets
+		text-align: center
+		.swiper-pagination-bullet
+			margin: 0 1px
+	.swiper-pagination-bullet-active
+		background: #6B3267
+	.goods-slider-prev, 
+	.goods-slider-next
+		top: 113px
+.goods-slider-collection
+	.pagination
+		display: flex
+		justify-content: center
+		margin: 0 -2px
+		li
+			margin: 0 2px
+		a
+			color: #A19FBB
+			display: block
+			text-align: center
+			border: 1px solid #A19FBB
+			min-width: 29px
+			height: 29px
+			font-size: 16px
+			line-height: 29px
+			&:hover
+				background: #6B3267
+				color: #fff
+				border-color: #6B3267
+		.prev,
+		.next
+			&:hover	a
+				background-color: #6B3267
+		.prev a
+			background: #ABABAB url(../img/double-arrow-left.svg) 50% 50% no-repeat
+			background-size: 21px
+		.next a
+			background: #ABABAB url(../img/double-arrow-right.svg) 50% 50% no-repeat
+			background-size: 21px
+.goods-post-collection
+	display: flex
+	flex-wrap: wrap
+	padding: 67px 0 0
+	margin: 0 -35px
+	.goods-post
+		width: 20%
+		padding: 0 35px 30px
+		margin: 0
+		.text-container
+			padding: 12px 10px
+.custom-checkbox-list
+	display: flex
+	&.color
+		font-size: 0
+		li
+			width: 17px
+			height: 17px
+			border: 1px solid #F2F2F2
+			margin-right: 2px
+			&.active
+				&.black
+					border-color: #000
+				&.purple
+					border-color: #6B3267
+				&.pink
+					border-color: #F47A87
+				&.blue
+					border-color: #3C5A9A
+				&.white
+					border-color: #fff
+			&.black
+				background: #000
+			&.purple
+				background: #6B3267
+			&.pink
+				background: #F47A87
+			&.blue
+				background: #3C5A9A
+			&.white
+				background: #fff
+	&.size
+		li
+			width: 26px
+			height: 18px
+			font-size: 14px
+			line-height: 19px
+			font-weight: 600
+			text-align: center
+			border: 1px solid #6B3267
+			background: none
+			color: #6B3267
+			margin-right: 4px
+			&.active
+				background: #6B3267
+				color: #fff
+#wrapper .container .odContent .letter-writing-section .odBraveFaith .bf-section.right .bf-image .smile-1
+	top: auto
+	bottom: -60px
+	left: -57px
+#wrapper .container .odContent .letter-writing-section .odBraveFaith .bf-section.right .bf-image .smile-2
+	bottom: auto
+	top: 46px
+.letter-writing-section
+	.promo .title
+		margin: 0 0 12px
+#wrapper .container .odContent .letter-writing-section .promo
+	margin: 0 0 21px
+	.odBraveFaith
+		.bf-section .bf-info
+			margin-top: -730px
+			.bf-description.first-text
+				margin: 0
+		.pattern.long
+			left: 8.5%
+			top: 79%
+.getting-started
+	max-width: 795px
+	margin: 0 auto 106px
+	position: relative
+	.pattern
+		top: 50%
+		right: -229px
+		margin-top: 77px
+		transform: translateY(-50%)
+	.title
+		margin: 0 0 50px
+	.text
+		padding-top: 75px
+		text-align: center
+	.btn
+		font-weight: 600
+		width: 195px
+		margin-top: 8px
+		text-align: center
+		&.more
+			background: #6b3267
+			color: #fff
+			border-color: #6b3267
+			border-left-width: 2px
+			padding-left: 36px
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				width: 23px
+				height: 100%
+				background: #fff
+			&:hover
+				background: #fbc6a2
+				border-color: #fbc6a2
+				color: #fff
+.custom-mark-list
+	li
+		margin: 0 0 50px
+		&:last-child
+			margin: 0
+	p,
+	p:last-child
+		margin: 0 0 18px
+	.title
+		display: inline-block
+		font-size: 20px
+		line-height: 27px
+		color: #F47A87
+		margin: 0 0 18px 15px
+		text-decoration-line: none
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: -15px
+			transform: translateY(-50%)
+			background: linear-gradient(180deg, #FFDAC1 0%, #F47A87 100%)
+			width: 54px
+			height: 54px
+			border-radius: 500px
+			margin: -3px 0 0
+		span
+			position: relative
+#wrapper .container .odContent .letter-writing-section .odDouble .odPrayers.pink-block
+	.pattern
+		&:first-child
+			top: -174px
+			right: auto
+			left: -193px
+			transform: rotate(90deg)
+		&:last-child
+			top: auto
+			bottom: -118px
+			right: -23px
+			z-index: -1
+.odPrayers.pink-block
+	z-index: 1
+	.shot-text
+		font-size: 20px
+		line-height: 27px
+		font-weight: 600
+		margin: 27px 0 0
+		position: relative
+		p
+			margin: 52px 0 23px
+			max-width: 260px
+			a
+				text-decoration: underline
+				&:hover
+					color: #6B3267
+					text-decoration: none
+		.btn
+			min-width: 194px
+			&:hover
+				color: #fff
+				border-color: #fff
+		.stamps
+			position: absolute
+			width: 181px
+			top: 5px
+			right: -61px
+#wrapper .container .odContent .letter-writing-section .odSubscribe
+	margin: 77px 0
+.give-form
+	background: #F2F2F2
+	padding: 60px 15px 30px 55px
+	margin: 28px 0
+	.give-form-container
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	.title
+		font-size: 20px
+		line-height: 26px
+		margin: 0 0 4px
+	.card-info
+		width: 450px
+		order: 1
+		ul
+			font-size: 20px
+			line-height: 30px
+			text-transform: uppercase
+			color: #6B3267
+	.tabset
+		width: 60%
+		.tab-nav
+			display: flex
+			flex-wrap: wrap
+			margin: 40px -8px
+			li
+				margin: 0 8px 12px
+			a
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 110px
+				height: 66px
+				background: #fff
+				img
+					width: auto
+		.tab-body
+			margin: 87px 0 30px
+			margin-right: -240px
+			.title
+				margin: 0 0 28px
+	.card-info-form
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		.item
+			&:first-child
+				width: 65%
+				padding-right: 25px
+			&:last-child
+				width: 35%
+	.last-text
+		font-size: 16px
+		line-height: 24px
+		color: #AF83AC
+/* Tabs */
+.tabset
+	position: relative
+	a
+		display: block
+		text-decoration: none
+		color: inherit
+		border: 2px solid #F2F2F2
+		&:hover
+			border-color: #6B3267
+	li.active a
+		border: 2px solid #6B3267
+	.tab
+		display: none
+		&.active
+			display: block
+#wrapper .container .odContent .odBraveFaith .bf-section.right .particles-mobile
+	display: none
+.give-section
+	.columns-info
+		margin-top: 40px
+		position: relative
+		z-index: 1
+	.article-column .pattern
+		top: 86.2%
+		right: 116px
+	.form-column
+		padding-right: 68px
+		padding-bottom: 78px
+.note-block
+	text-align: center
+	.title
+		margin: 0 0 17px
+	p
+		max-width: 650px
+		margin: 0 auto 57px
+.notes
+	display: flex
+	justify-content: space-between
+	max-width: 875px
+	margin: 0 auto
+	text-align: left
+.blockquote
+	padding-left: 63px
+	p
+		margin: 0
+	.mark
+		background: none
+		padding: 0
+		color: #AF83AC
+#gift-form
+	&.gbp
+		.category-text:before
+			content: '£'
+			display: inline-block
+			vertical-align: middle
+			margin-right: 5px
+	&.euro
+		.category-text:before
+			content: '€'
+			display: inline-block
+			vertical-align: middle
+			margin-right: 5px
+.user-form.category
+	margin-top: 53px
+	.custom-select
+		margin-bottom: 62px
+		span
+			border: 2px solid #6b3267
+			border-left-width: 23px
+			min-width: 350px
+			&:after
+				display: block
+				background: url(../img/arrow-down-purple.svg) no-repeat center
+				background-size: contain
+	.wrap-input
+		display: flex
+	input
+		width: 86px
+		line-height: 27px
+	.category-text
+		width: 445px
+		border: 2px solid #6b3267
+		border-left: 0
+		padding: 4px 15px
+		font-size: 20px
+		line-height: 27px
+		color: #6B3267
+	.custom-checkbox
+		margin: 0
+		.checkbox-container
+			margin-bottom: 4px
+	.small-text
+		font-size: 12px
+		line-height: 22px
+		margin: 0
+	p.mark
+		font-size: 16px
+		line-height: 29px
+		font-weight: 600
+		margin-bottom: 38px
+#wrapper .container .odContent .give-section .odBraveFaith
+	margin-top: -139px
+	padding-top: 134px
+#wrapper .container .odContent .give-section .odBraveFaith .bf-section.right .bf-info
+	margin-bottom: 221px
+#wrapper .container .odContent .give-section .odBraveFaith .bf-logo
+	top: 295px
+	left: 47%
+#wrapper .container .odContent .pray-section .promo .odBraveFaith .pattern
+	top: 16px
+	left: 27.7%
+#wrapper .container .odContent .pray-section .promo .odBraveFaith .pattern.long
+	left: 24.9%
+	top: 89%
+#wrapper .container .odContent .pray-section .promo .odBraveFaith .bf-section .bf-info .bf-description
+	line-height: 21px
+.pray-section
+	.promo
+		margin: 0 0 82px
+		.title
+			margin: 0 0 12px
+		.bf-info .mark
+			font-size: 14px
+			font-weight: normal
+			text-transform: none
+.news-collection
+	margin: 0 0 110px
+	.title
+		margin: 0 0 48px
+	.posts
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		.post
+			width: 32.5%
+			margin: 0 0 36px
+		.title
+			font-size: 20px
+			line-height: 27px
+			font-weight: 600
+			text-transform: none
+			margin: 0 0 9px
+		.image
+			margin: 0 0 12px
+		.date
+			font-size: 18px
+			line-height: 29px
+			font-weight: 600
+			color: #ABABAB
+			margin: 0 0 5px
+		.description
+			margin: 0 0 20px
+		.btn
+			font-weight: 600
+#wrapper .container .odContent .pray-section .brave-faith-section .odDouble .odStories .pattern
+	top: -96px
+	left: auto
+	right: -7px
+#wrapper .container .odContent .pray-section .odSubscribe
+	margin-top: 81px
+#wrapper .container .odContent .pray-section .odNeeds.needs-top
+	margin-top: 76px
+	.content
+		margin-top: 23px
+.secret-section .promo
+	padding: 51px 0 5px
+#wrapper .container .odContent .secret-section .odBraveFaith .bf-section.right .bf-image .smile-1
+	top: 28px
+	left: -69px
+	width: 189px
+#wrapper .container .odContent .secret-section .odBraveFaith .bf-section.right .bf-image .smile-2
+	bottom: 57px
+#wrapper .container .odContent .secret-section .promo .odBraveFaith .bf-section .bf-info
+	margin-top: -672px
+.secret-section .promo .bf-info p
+	margin: 0 0 25px
+.download-block
+	max-width: 1095px
+	.title
+		margin: 0 0 26px
+.comment-block
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin: 91px 0 113px
+	.title
+		margin: 0 0 39px
+	.text
+		width: 62%
+		padding: 61px 15px 0 72px
+		font-size: 16px
+		line-height: 24px
+		position: relative
+		.smile-1
+			position: absolute
+			left: 8px
+			bottom: -63px
+	p
+		margin: 0 0 24px
+	.author
+		font-style: italic
+		text-align: right
+		margin: 57px 0 0 auto
+		max-width: 500px
+	.image
+		width: 452px
+		height: 448px
+		background: linear-gradient(180deg, #FF7E99 0%, #51255C 100%)
+		padding: 15px
+		img
+			width: 100%
+			height: 100% !important
+			object-fit: cover
+	.btn
+		width: 195px
+		font-weight: 600
+		text-align: center
+		position: absolute
+		bottom: 0
+	&.other
+		.text
+			line-height: 26px
+		.image
+			position: relative
+			.smile-1
+				position: absolute
+				top: -29px
+				right: -82px
+				width: 193px
+				height: auto !important
+#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .bf-section .bf-image
+	width: 51.2%
+	max-height: 100%
+	padding-left: 112px
+	transform: translateY(0)
+	.smile-1
+		position: absolute
+		top: auto
+		bottom: -82px
+		left: 20px
+		width: 227px
+#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .bf-section .bf-info
+	margin-top: -750px
+	padding: 0 0 0 24px
+	position: relative
+	.bf-description
+		line-height: 18px
+.brave-faith-section .promo.left-image
+	padding: 0 0 18px
+	.title
+		margin: 0 0 10px
+#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .pattern
+	bottom: -111px
+.article-column p strong
+	display: block
+.nano-section .columns-info
+	margin-bottom: 100px
+.nano-section .article-column .pattern
+	top: auto
+	bottom: -38px
+	right: 52px
+.nano-section .form-column .pattern
+	top: 16.8%
+	right: -44px
+	transform: rotate(-90deg)
+.custom-checkbox.only-list .checkbox-container
+	width: 100%
+	margin-bottom: 19px
+.brave-faith-block
+	display: flex
+	flex-wrap: wrap
+	background: linear-gradient(180deg, #FF7E99 0%, #51255C 100%)
+	color: #fff
+	padding: 50px 100px 0
+	margin: 0 0 114px
+	position: relative
+	.pattern
+		top: -55px
+		left: 52px
+	.text
+		width: 49.5%
+		line-height: 22px
+		padding: 38px 69px 6px
+		.description
+			max-width: 320px
+	.image
+		width: 444px
+		height: 425px
+		img
+			width: 100%
+			height: 100% !important
+			object-fit: cover
+	.title
+		font-size: 24px
+		line-height: 31px
+		color: inherit
+		margin: 0 0 20px
+	.notes
+		display: block
+		margin-top: 52px
+		position: relative
+		.subtitle-note
+			background: #fff
+			color: #6B3267
+			margin: 0 0 35px
+			line-height: 18px
+			strong
+				color: #fff
+			&.last
+				position: absolute
+				bottom: 0
+				left: 100%
+				margin: 0 0 54px 41px
+		.btn
+			position: absolute
+			bottom: 0
+			left: 100%
+			margin-left: 41px
+			min-width: 195px
+			text-align: center
+	.btn
+		color: inherit
+		border-color: inherit
+	.bf-logo
+		position: absolute
+		bottom: 47px
+		right: -60px
+		width: 235px
+.blockquote-box
+	background: #F2F2F2
+	padding: 85px 75px 44px
+	text-align: center
+	color: #75747B
+	font-size: 16px
+	line-height: 26px
+	margin: 0 0 142px
+	position: relative
+	&:before
+		content: '***'
+		position: absolute
+		top: 48px
+		left: 50%
+		color: #6B3267
+		font-size: 51px
+		transform: translateX(-50%)
+	blockquote
+		font-size: 20px
+		line-height: 32px
+		font-family: 'LeituraNews-Roman4',sans-serif
+		margin: 0 0 33px
+	p
+		margin: 0
+.sign-up-block
+	display: flex
+	flex-wrap: wrap
+	max-width: 1095px
+	margin: 0 auto 134px
+	.text
+		width: 45%
+		padding: 37px 70px 0 0
+		line-height: 21px
+	.image
+		max-width: 563px
+		position: relative
+		.pattern
+			top: -140px
+			left: 77px
+			transform: rotate(-90deg)
+		.smile-1
+			position: absolute
+			bottom: -52px
+			left: -55px
+			width: 193px
+	.title
+		line-height: 52px
+		margin: 0 0 28px
+	.btn
+		width: 195px
+		text-align: center
+		font-weight: 600
+.mark-list
+	color: #f47a87
+	line-height: 25px
+	margin: 0 0 22px
+	li
+		padding: 0 0 0 23px
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			top: 9px
+			left: 10px
+			width: 3px
+			height: 3px
+			border-radius: 50px
+			background: #f47a87
+.full-odPrayers,
+#wrapper .container .odContent .odDouble.full-odPrayers
+	max-width: 100%
+	margin-bottom: 47px
+	align-items: inherit
+	.odPrayers
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding: 15px
+		margin: 0
+		width: 68.5%
+		.image
+			width: 400px
+			height: 675px
+			margin: 0
+			position: relative
+			img
+				width: 100%
+				height: 100% !important
+				object-fit: cover
+			.smile-1
+				position: absolute
+				top: -9px
+				right: -91px
+				width: 228px
+				height: auto !important
+			.pattern
+				top: auto
+				bottom: -59px
+				right: -38px
+		.content
+			width: 49%
+			padding: 112px 40px 15px 15px
+#wrapper .container .odContent .odDouble .odPrayers
+	.btn[type="submit"]
+		display: block
+		width: 195px
+		text-align: center
+		font-weight: 600
+		margin: 30px auto 0
+		color: #fab59c
+		border-color: #fab59c
+		&:hover
+			color: #fff
+			border-color: #fff
+	&.pink-block
+		.btn[type="submit"]
+			color: #6b3267
+			border-color: #6b3267
+			&:hover
+				color: #fff
+				border-color: #fff
+.full-odPrayers .odPrayers-purple-block
+	width: 31.5%
+.odPrayers-purple-block
+	padding: 40px 40px 40px 24px
+	color: #fff
+	text-align: center
+	position: relative
+	.image
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		img
+			width: 100%
+			height: 100% !important
+			object-fit: cover
+	.text
+		position: relative
+	.logo-block
+		display: block
+		width: 82px
+		margin: 0 auto 22px
+	.title
+		color: inherit
+		font-size: 30px
+		margin: 0 0 49px
+	.list
+		li
+			display: flex
+			justify-content: space-between
+			line-height: 22px
+			text-align: left
+			margin: 0 0 6px
+			position: relative
+			&:nth-child(2n)
+				.image-list
+					border-color: #F47A87
+				.text-list
+					padding-left: 0
+					padding-right: 15px
+					a
+						background: #F47A87
+						color: #fff
+	.image-list
+		width: 149px
+		height: 149px
+		border: 4px solid #51255C
+		img
+			width: 100%
+			height: 100% !important
+			object-fit: cover
+	.text-list
+		width: 58%
+		padding: 26px 0
+		padding-left: 18px
+		position: relative
+		p
+			display: -webkit-box
+			-webkit-line-clamp: 2
+			-webkit-box-orient: vertical
+			overflow: hidden
+		a
+			position: absolute
+			bottom: 30px
+			left: 0
+			width: 100%
+			background: #51255C
+			color: #F47A87
+			padding: 5px 15px
+			text-align: center
+			text-transform: uppercase
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+			.icon
+				display: inline-block
+				vertical-align: middle
+				width: 19px
+				margin: 0 7px 0 -7px
+	.text-bottom
+		position: absolute
+		bottom: 63px
+		left: 0
+		width: 100%
+		padding: 0 15px
+		line-height: 22px
+		color: #AF83AC
+		p
+			max-width: 265px
+			margin: 0 auto 10px
+		.stayInTouch
+			ul
+				display: flex
+				align-items: center
+				justify-content: center
+			li
+				margin: 0 7px
+			a
+				display: block
+				width: 46px
+				height: 46px
+				background: #fff
+				color: #f7928f
+				line-height: 46px
+				border-radius: 500px
+				text-align: center
+				position: relative
+				&:hover
+					top: -2px
+.text-error
+	text-align: center
+	font-size: 16px
+	line-height: 29px
+	max-width: 580px
+	margin: 46px auto
+	padding: 0 15px
+	.title
+		font-size: 120px
+		line-height: 120px
+		background: linear-gradient(180deg, #F47A87 0%, #FFDAC1 100%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		background-clip: text
+		text-fill-color: transparent
+		margin: 0 0 9px
+	p
+		margin: 0 0 22px
+	ul
+		li
+			margin: 0 0 14px
+		.btn
+			width: 195px
+			text-align: center
+			font-weight: 600
+.search-form
+	position: relative
+	.search-form-btn
+		width: 13px
+		height: 13px
+	.search
+		display: none
+		position: absolute
+		top: -3px
+		right: 0
+		width: 100%
+		input
+			width: 100%
+			height: 22px
+			border: none
+			border-bottom: 3px solid #6B3267
+			padding: 0 27px 0 0
+		.btn-search
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 22px
+			height: 22px
+			border: 1px solid #6B3267
+			background: #6B3267 url(../img/icon-search-white.svg) 50% 50% no-repeat
+			background-size: 14px
+			font-size: 0
+	&.open
+		width: 163px
+		.search-form-btn
+			display: none
+		.search
+			display: block
+.cart-num-basket
+	position: relative
+	.cart-num
+		position: absolute
+		bottom: 1px
+		right: -2px
+		min-width: 8px
+		height: 8px
+		border-radius: 50px
+		background: #6B3267
+		color: #fff
+		font-size: 6px
+		line-height: 9px
+		text-align: center
+.cart-button.cart-num-basket
+	.cart-num
+		bottom: 4px
+		right: 4px
+.letter-box
+	background: #F2F2F2
+	color: rgba(33, 21, 11, 0.62)
+	font-size: 14px
+	line-height: 25px
+	padding: 10px
+	margin: 55px 0
+	position: relative
+	.inner-text
+		border: 1px dashed #ABABAB
+		padding: 35px 62px
+		padding-right: 165px
+		p
+			margin: 0 0 25px
+	.stamps
+		position: absolute
+		top: -30px
+		right: -52px
+		width: 211px
+
+/* MODAL */
+.modal
+	display: none
+.modal-text-block
+	background: #fff
+	padding: 58px 66px
+	font-size: 16px
+	line-height: 29px
+	.title
+		margin: 0 0 46px
+	p
+		margin: 0 0 20px 30px
+	.shot-text
+		max-width: 660px
+	.strong-text
+		max-width: 100%
+		font-weight: 600
+		margin-left: 0
+p.list-mark
+	color: #F47A87
+	margin: 0 0 10px 100px
+	padding-left: 15px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 11px
+		left: 0
+		width: 3px
+		height: 3px
+		border-radius: 50px
+		background: #F47A87
+@media only screen and (max-width:1439px)
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section .bf-info
+		margin-left: 100px
+		margin-top: -50%
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section.right .bf-image
+		width: 40%
+	#wrapper .container .odContent .promo .odBraveFaith .pattern.long
+		top: 90%
+		max-height: 298px
+	.news-boxes h3
+		font-size: 21px
+		line-height: 28px
+	#wrapper .container .odContent .odNeeds.news-slider .content .post .btn
+		width: auto
+	.video-block h3
+		font-size: 32px
+		line-height: 42px
+	#wrapper .container .odContent .map-section .odCost
+		margin-left: 0
+		margin-right: 0
+	.map-section .bf-logo
+		left: 250px
+	.map-section .text-block
+		padding-left: 35px
+		padding-right: 35px
+	#wrapper .container .odContent .map-section .odCost .pattern
+		width: auto
+	.video-block .text
+		padding-left: 15px
+	.news-boxes-links .item .img>a
+		width: 300px
+	#wrapper .container .odContent .odNeeds.blog-slider .content .post .title
+		line-height: 29px
+	.blog-slider .text-container
+		padding: 20px 15px 15px
+	#wrapper .container .odContent .letter-writing-section .promo .odBraveFaith .bf-section .bf-info
+		margin-top: -565px
+	#wrapper .container .odContent .letter-writing-section .odBraveFaith .bf-section.right .bf-image .smile-2
+		right: -80px
+	.give-form
+		.card-info
+			width: 300px
+		.tabset
+			width: 68%
+	.accordion
+		padding-right: 60px
+	.goods-post-collection
+		margin: 0 -20px
+	.goods-post-collection .goods-post
+		padding-left: 20px
+		padding-right: 20px
+	.form-column .pattern
+		right: -15px
+	.comment-block .text
+		width: 60%
+	.brave-faith-block
+		.text
+			padding-left: 10px
+			padding-right: 10px
+		.pattern
+			left: 15px
+		.notes
+			.subtitle-note.last,
+			.btn
+				margin-left: -10px
+	.comment-block .author
+		max-width: 380px
+		margin-top: 30px
+	#wrapper .container .odContent .odDouble.full-odPrayers .odPrayers .content, 
+	.full-odPrayers .odPrayers .content
+		width: 48%
+		padding-left: 40px
+		padding-right: 0
+	.odPrayers-purple-block
+		padding-left: 15px
+		padding-right: 15px
+
+@media only screen and (max-width:1365px)
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section .bf-info
+		width: 40%
+		margin-top: -40%
+		margin-left: 85px
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section.right .bf-image
+		margin-right: 7%
+	.subtitle-note
+		width: 100%
+		padding: 20px 15px
+	.map-section .text-block
+		padding: 40px 20px 70px 20px 
+	.map-section .bf-logo
+		left: 200px
+		bottom: -87px
+		width: 180px
+	.map-section
+		margin: 0 0 115px
+	.news-boxes .item
+		min-height: 420px
+	.news-boxes .item .text
+		width: 60%
+		padding-top: 20px
+		padding-left: 0
+	.news-boxes .item .img
+		width: 40%
+		a
+			width: 100%
+			height: 100%
+	.video-block .text
+		width: 44%
+		padding: 30px 15px 15px 0
+	.videoblog-section .gallery-slider .slider-title
+		padding: 0
+	#wrapper .container .odContent .map-section .odCost .map
+		height: 450px
+	.stock-block
+		.item
+			padding-left: 15px
+			.text
+				p
+					max-width: 88%
+			.img
+				img
+					max-height: 215px
+		h3
+			font-size: 26px
+			line-height: 30px
+		.icon-stock
+			bottom: -40px
+			right: 115px
+	#wrapper .container .odContent .odNeeds.blog-slider .content
+		margin: 30px 0 0
+	.blog-slider
+		.blog-slider-prev,
+		.blog-slider-next
+			top: 90px
+		.blog-slider-prev
+			left: -5px
+		.blog-slider-next
+			right: -5px
+	.gallery-slider 
+		.post h5
+			width: 100%
+			font-size: 11px
+			line-height: 16px
+	.gallery-slider .button-prev
+		left: -20px
+	.gallery-slider .button-next
+		right: -20px
+	.news-boxes-links
+		.item
+			.img
+				width: 50%
+				>a
+					width: 100%
+			.btn
+				margin: 0
+			&.vertical .text
+				padding-left: 30px
+	.news-boxes-links.only-one .item .text
+		padding-left: 30px
+		padding-right: 70px
+	.news-boxes-links.other-boxes
+		.item
+			.text
+				padding-left: 30px
+			&.only-picture .text
+				padding: 50px 30px
+	.visual-section h1
+		font-size: 80px
+		line-height: 80px
+	.news-description-block
+		.content-block
+			width: 76%
+		.aside-block
+			width: 22%
+	.bg-pink-box
+		margin: 20px 0
+	.news-gallery img
+		max-width: 275px
+	#wrapper .container .odContent .odBraveFaith .bf-section.right .bf-image .smile-1,
+	#wrapper .container .odContent .odBraveFaith .bf-section.right .bf-image .smile-2,
+	.smile-1,
+	.smile-2
+		width: 160px
+	#wrapper .container .odContent .brave-faith-section .odBraveFaith .bf-section.right .bf-image .smile-1, 
+	.promo .bf-image .smile-1
+		left: -50px
+	#wrapper .container .odContent .brave-faith-section .odBraveFaith .bf-section.right .bf-image .smile-2, 
+	.promo .bf-image .smile-2
+		bottom: 0
+	#wrapper .container .odContent .brave-faith-section .promo .odBraveFaith .pattern
+		bottom: -55px
+	.article-column
+		.content-text
+			padding: 15px 15px 20px
+		.image-text-2
+			display: none
+		.pattern
+			right: 0
+	.form-column
+		padding: 30px 15px
+		.pattern
+			right: 0
+	#wrapper .container .odContent .brave-faith-section .odDouble
+		margin-bottom: 30px
+	.product-info-section .product-info-text
+		width: 54%
+	.goods-slider .goods-post
+		.title
+			font-size: 18px
+			line-height: 24px
+		.price
+			flex-wrap: wrap
+			>div
+				width: 100%
+	#wrapper .container .odContent .letter-writing-section .odBraveFaith .bf-section.right .bf-image .smile-2
+		top: -15px
+		right: -47px
+	#wrapper .container .odContent .letter-writing-section .promo .odBraveFaith .bf-section .bf-info
+		margin-top: -360px
+	#wrapper .container .odContent .letter-writing-section .promo .odBraveFaith .pattern.long
+		left: 0
+	#wrapper .container .odContent .brave-faith-section .odDouble .odStories
+		width: 55%
+	.odPrayers.pink-block .shot-text
+		p
+			max-width: 230px
+		.stamps
+			right: -45px
+	.give-form
+		padding-left: 15px
+		.tabset .tab-body
+			margin-top: 60px
+			margin-right: -308px
+	.notes .subtitle-note
+		margin: 0 7px 20px
+	.give-section .form-column
+		padding-right: 15px
+	.article-column .smile-1
+		margin: -41px 0 -105px -75px
+	.goods-post-collection
+		margin: 0 -10px
+	.goods-post-collection .goods-post
+		padding-left: 10px
+		padding-right: 10px
+	#wrapper .container .odContent .secret-section .promo .odBraveFaith .bf-section .bf-info
+		margin-top: -480px
+	.form-column .pattern
+		right: -50px
+	.article-column .pattern
+		top: 87%
+	.comment-block
+		margin: 60px 0
+		.text
+			width: 54%
+			padding: 40px 15px 0 0
+			.smile-1
+				left: -20px
+				bottom: -105px
+	#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .bf-section .bf-image
+		padding-left: 83px
+	#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .bf-section .bf-info
+		padding-left: 50px
+	#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .pattern
+		width: 320px
+	.nano-section .article-column .pattern
+		bottom: -50px
+		right: 30px
+	.brave-faith-block
+		padding: 50px 30px 0
+		margin: 0 0 70px
+		.pattern
+			display: none
+		.text
+			padding: 38px 50px 0 0
+		.notes
+			.btn, .subtitle-note.last
+				margin-left: 30px
+		.bf-logo
+			bottom: 190px
+			right: -8px
+			width: 180px
+	.comment-block.other .image .smile-1
+		right: -40px
+	.comment-block .author
+		max-width: 315px
+	.blockquote-box
+		padding-left: 30px
+		padding-right: 30px
+		margin: 0 0 50px
+	.sign-up-block .text
+		width: 43%
+		padding-right: 30px
+	#wrapper .container .odContent .odDouble.full-odPrayers .odPrayers .image, 
+	.full-odPrayers .odPrayers .image
+		width: 45%
+	#wrapper .container .odContent .odDouble.full-odPrayers .odPrayers .content, 
+	.full-odPrayers .odPrayers .content
+		width: 55%
+	.odPrayers-purple-block .text-list a
+		padding: 5px
+		font-size: 12px
+		.icon
+			width: 14px
+			margin: 0 3px 0 -3px
+	.odPrayers-purple-block .text-list
+		padding-left: 10px
+	.odPrayers-purple-block .list li:nth-child(2n) .text-list
+		padding-right: 10px
+
+@media only screen and (max-width:1023px)
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section .bf-info
+		margin-left: 0
+		margin-top: -55%
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section.right .bf-image
+		top: 0
+		width: 50%
+		.img-note
+			right: -22px
+			width: 180px
+	#wrapper .container .odContent .map-section .odCost
+		flex-wrap: wrap
+	.map-section
+		margin: 0
+	.map-section .text-block,
+	.map-section .map-block
+		width: 100%
+	.map-section .text-block
+		padding: 30px 15px
+	.map-section .bf-logo,
+	#wrapper .container .odContent .map-section .odCost .pattern,
+	.news-boxes .pattern.long,
+	#wrapper .container .odContent .pattern
+		display: none
+	.news-boxes .item .text
+		width: 56%
+		padding: 15px 10px 0 0
+	.news-boxes .item .img
+		width: 44%
+	.news-boxes h3
+		font-size: 15px
+		line-height: 24px
+	.news-boxes .item .btn
+		min-width: 180px
+		font-size: 16px
+		margin: 0
+	.title-description,
+	.videoblog-section .title
+		margin-bottom: 20px
+	#wrapper .container .odContent .odNeeds.news-slider .content .post .btn
+		font-size: 16px
+	.videoblog-section .gallery-slider .mySwiper2
+		height: auto
+		margin: 0 0 30px
+	.gallery-slider .post-text .item
+		padding: 15px 10px
+	.gallery-slider .post .post-time
+		bottom: 10px
+		left: 10px
+	.gallery-slider .post h5
+		width: 100%
+		font-size: 11px
+		line-height: 16px
+	.video-block
+		flex-wrap: wrap
+		.text,
+		.video
+			width: 100%
+		.text
+			padding: 0
+			.post-time
+				bottom: 27px
+				right: 0
+		.stayInTouch
+			margin: 20px 0
+	.stock-block .item .img
+		top: auto
+		bottom: 0
+		transform: translateY(0)
+		img
+			max-height: 150px
+	.stock-block .icon-stock
+		font-size: 20px
+		line-height: 33px
+		width: 90px
+		height: 90px
+		bottom: -20px
+		right: 55px
+	.stock-block .item .text
+		width: 72%
+	.blog-section
+		padding: 0 0 80px
+	#wrapper .container .odContent .blog-section .pattern
+		display: block
+		bottom: 9px
+		left: 15px
+		img
+			display: none
+			&:last-child
+				display: block
+	.act-section .title
+		margin: 0 0 40px
+	.news-boxes-links
+		.item
+			width: 100%
+	.news-boxes-links.only-one .item .text
+		padding: 20px 30px
+	.news-boxes-links.only-one .item .img
+		height: auto
+	.news-boxes-links.other-boxes .item .img>a
+		width: 100%
+	.news-boxes-links.only-one .item h3
+		font-size: 41px
+	.news-boxes-links.other-boxes .item .text
+		padding-left: 15px
+	.news-boxes-links.other-boxes .item.only-picture .text
+		padding: 50px 15px
+	.news-boxes-links.other-boxes .item .text p
+		max-width: 100%
+	.news-boxes-links .item.vertical .text p
+		max-width: 470px
+	.visual-section
+		.btn-back
+			top: 20px
+			left: 15px
+		.stayInTouch
+			top: 20px
+			right: 15px
+		h1
+			font-size: 50px
+			line-height: 55px
+		.inner-text
+			padding: 10px 15px
+	.news-description-block
+		.title
+			line-height: 37px
+			margin: 0 0 15px
+		.content-block
+			width: 70%
+		.aside-block
+			width: 28%
+		.new
+			margin: 0 0 30px
+			&:first-child .title
+				margin: 0 0 15px
+			p
+				margin: 0 0 10px
+			.post-info .design
+				font-size: 20px
+				line-height: 30px
+	#wrapper .container .odContent .odNeeds.blog-slider .content .post .title
+		font-size: 16px
+		line-height: 22px
+	.blog-slider .post-info .icon-dislike, .blog-slider .post-info .icon-like, .blog-slider .post-info .icon-view
+		margin-left: 10px
+	.blog-slider .post-info .icon-view
+		font-size: 15px
+	.bg-pink-box .inner-text .text .boxes .box
+		padding: 30px 10px 20px
+	.bg-gray-box .inner-text .text
+		padding: 0
+	.bg-gray-box .inner-text .image
+		height: 435px
+	.news-gallery img
+		max-width: 190px
+		max-height: 115px
+	#wrapper .container .odContent .brave-faith-section .promo .odBraveFaith .bf-section .bf-info
+		margin-top: -456px
+	#wrapper .container .odContent .brave-faith-section .odBraveFaith .bf-section.right .bf-image .smile-1, 
+	.promo .bf-image .smile-1
+		left: -30px
+	#wrapper .container .odContent .brave-faith-section .odBraveFaith .bf-section.right .bf-image .smile-2, 
+	.promo .bf-image .smile-2
+		right: -80px
+	.columns-info
+		margin: 0 -15px 30px
+		.column
+			width: 100%
+	#wrapper .container .odContent .brave-faith-section .odDouble
+		margin: 0 -15px
+		.odStories
+			width: 100%
+			margin: 24px 0 0
+			.post .title
+				text-align: left
+	#wrapper .container .odContent .odDouble .odPrayers.pink-block
+		width: 100%
+		.description
+			text-align: left
+	#wrapper .container .odContent .brave-faith-section .odDouble .odStories
+		.post
+			justify-content: flex-start
+			.image
+				width: auto
+				margin-right: 30px
+				a img
+					max-height: 650px
+					width: auto
+			.text
+				width: 55%
+	.basket-form
+		.basket-list
+			.basket-product
+				width: 15%
+			.basket-description
+				width: 40%
+			.wrap-img
+				margin: 0
+	.product-info-section
+		justify-content: flex-start
+		.product-info-slider
+			width: 345px
+			.swiper-slide img
+				width: 100%
+		.product-info-text
+			width: auto
+			padding-left: 20px
+			.basket-form
+				.title
+					margin: 0 0 15px
+				.basket-list .basket-description
+					width: 60%
+				.basket-result .btn
+					width: 175px
+					+.btn
+						margin-left: 10px
+	#wrapper .container .odContent .odNeeds.goods-slider .content
+		margin-top: 28px
+	#wrapper .container .odContent .letter-writing-section .promo .odBraveFaith .bf-section .bf-info
+		margin-top: -430px
+	#wrapper .container .odContent .letter-writing-section .promo
+		margin: 0 0 70px
+	.logo-brave-circle
+		width: 190px
+	.getting-started
+		margin-bottom: 50px
+		.text
+			padding-top: 40px
+	.odPrayers.pink-block .shot-text
+		padding-right: 30px
+		p
+			margin: 20px 0
+			max-width: 290px
+		.stamps
+			right: -25px
+	.give-form
+		padding: 40px 15px
+		.card-info
+			width: 100%
+			margin: 0 0 30px
+			order: -1
+		.tabset
+			width: 100%
+			.tab-nav
+				margin: 20px -4px
+				li
+					margin: 0 4px 10px
+			.tab-body
+				margin: 0 0 20px
+				.title
+					margin: 0 0 10px
+	.give-section .column:last-child
+		order: -1
+	.user-form.category .custom-select
+		margin-bottom: 20px
+	.give-section .form-column
+		padding-bottom: 45px
+	.pray-section .promo,
+	.news-collection .title,
+	.news-collection
+		margin: 0 0 20px
+	.news-collection .posts .btn
+		font-size: 16px
+	.accordion
+		padding-right: 0
+	.goods-post-collection
+		padding: 30px 0 0
+	.goods-post-collection .goods-post
+		width: 25%
+		padding-bottom: 10px
+	.goods-post-collection .goods-post .title
+		font-size: 18px
+	#wrapper .container .odContent .worldwatch-list-section .map-section
+		margin: 0
+	.secret-section .promo
+		padding: 0
+	#wrapper .container .odContent .secret-section .promo .odBraveFaith .bf-section .bf-info
+		margin-top: -420px
+	.comment-block
+		.text
+			padding-top: 0
+			.smile-1
+				left: auto
+				right: -130px
+				bottom: auto
+				top: 100px
+		.image
+			width: 45%
+			height: 100%
+		.author
+			margin: 0
+	#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .bf-section .bf-image
+		padding-left: 0
+	#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .bf-section .bf-info
+		padding-left: 35px
+		margin-top: -500px
+	#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .bf-section .bf-image .smile-1
+		bottom: -60px
+		left: -30px
+		width: 170px
+	.brave-faith-block
+		.text
+			padding: 15px 30px 0 0
+		.image
+			width: 342px
+			height: 395px
+		.notes
+			.btn, .subtitle-note.last
+				margin-left: 20px
+	.comment-block.other .image .smile-1
+		width: 130px
+	.comment-block
+		.author
+			max-width: 100%
+		.btn
+			position: static
+	.sign-up-block
+		margin-bottom: 60px
+		.text
+			width: 58%
+			padding-top: 0
+		.image
+			max-width: 309px
+			height: fit-content
+			.smile-1
+				width: 150px
+		.title
+			line-height: 40px
+	.modal-text-block
+		padding: 40px 20px
+	#wrapper .container .odContent .odDouble.full-odPrayers, 
+	.full-odPrayers
+		max-width: 1095px
+	.full-odPrayers .odPrayers-purple-block
+		width: 100%
+	.odPrayers-purple-block .list
+		margin: 0 0 50px
+		li
+			justify-content: center
+	.odPrayers-purple-block .text-bottom
+		position: relative
+		bottom: auto
+		left: auto
+
+@media only screen and (max-width:767px)
+	#wrapper .container header .header_top .header_top-line
+		display: none
+		&.index-page
+			display: block
+	.mobile .mobile-overlay .mo-content .mobile-menu ul li .sub-menu a,
+	.mobile .mobile-overlay .mo-content .mobile-menu ul li.current-menu-item .sub-menu a
+		text-transform: none
+		color: #fff
+	.mobile .mobile-overlay .mo-content .mobile-menu ul li.current-menu-item .sub-menu .current-menu-item a
+		color: #fab59c
+	.mobile .mobile-overlay .mo-content .mobile-menu ul li.current-menu-item .sub-menu .current-menu-item
+		background: none
+	.mobile .mobile-overlay .mo-content .mobile-menu ul .sub-menu
+		margin: 0
+	.promo .title
+		margin: 0 0 34px
+	#wrapper .container .odContent .promo .odBraveFaith
+		padding: 0
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section
+		width: 56%
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section.right
+		width: 44%
+		padding-left: 0
+		margin: 0 0 0 auto
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section.right .bf-image,
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section .bf-info,
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section:nth-child(2) .bf-info
+		width: 100%
+		margin: 0
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section .bf-info,
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section:nth-child(2) .bf-info
+		text-align: left
+		margin: -173px 0 0
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section:nth-child(2)
+		margin: 0
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section.right .bf-image
+		height: 175px
+		overflow: hidden
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section.right .bf-image img
+		width: 100%
+		height: 100%!important
+		object-fit: cover
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section .bf-info .bf-description
+		display: none
+	#wrapper .container .odContent .promo .odBraveFaith .bf-description.mobile
+		font-weight: 600
+		padding: 0 15px
+		margin: 0 0 15px
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section.right .bf-image .img-note
+		display: none
+	.subtitle-note
+		height: 113px
+		padding: 31px 15px
+		margin: 0 0 30px
+		&:before
+			width: 44px
+			height: 44px
+			top: -28px
+			left: -10px
+		strong
+			font-size: 16px
+			line-height: 21px
+			left: 2px
+			top: -14px
+	#wrapper .container .odContent .map-section .odCost
+		margin: 25px -15px 0
+	#wrapper .container .odContent .map-section .odCost .title
+		line-height: 32px
+		margin-bottom: 15px
+		text-align: center
+		margin: 0 0 19px
+	#wrapper .container .odContent .map-section .odCost .map
+		height: 350px
+		svg
+			height: 350px
+	.map-section .text-block
+		font-size: 14px
+		line-height: 26px
+		padding: 23px 15px
+	.map-section .map .zoom
+		display: none
+	.map-section .text-block p
+		margin: 0 0 4px
+	.map-section .text-block .custom-select
+		margin: 0 0 17px
+	.map-info
+		flex-wrap: wrap
+		font-size: 14px
+		line-height: 18px
+		padding: 20px 15px
+		border: 1px solid #D9D9D9
+		max-width: 100%
+		margin: 0 0 35px
+		.item
+			width: 50%
+		.item-2
+			padding-right: 0
+		.item-3
+			width: 100%
+	#wrapper .container .odContent .map-section .odCost .map-info-slider
+		font-size: 16px
+		line-height: 20px
+		padding: 0 0 45px
+		.title
+			font-size: 20px
+			line-height: 26px
+			text-align: left
+			margin-bottom: 8px
+	.title-description
+		width: 100%
+		max-width: 650px
+	#wrapper .container .odContent .map-section .odCost .pattern.mobile
+		display: block
+		top: auto
+		right: -11px
+		bottom: 95px
+	.news-boxes
+		padding: 0 15px
+		.item
+			width: 345px
+			min-height: 190px
+			padding: 5px 10px 5px 25px
+			margin: 0 auto
+			.text
+				width: 80%
+				padding-top: 33px
+			.btn
+				min-width: 139px
+				height: 32px
+				line-height: 32px
+				padding: 0 13px
+			.img
+				height: 178px
+				margin: 0 0 0 auto
+				img
+					object-fit: contain
+		h3
+			font-size: 14px
+			line-height: 19px
+			margin: 0 0 25px
+		p
+			display: none
+		.news-boxes-prev,
+		.news-boxes-next
+			display: block
+			top: 70px
+		.news-boxes-prev
+			left: 7px
+		.news-boxes-next
+			right: 7px
+	.videoblog-section:last-child
+		margin-bottom: -40px
+	.video-block
+		.video
+			height: 350px
+			position: absolute
+			top: 0
+			left: 0
+		.text
+			padding-top: 380px
+	.gallery-slider
+		.video-slider
+			margin-top: 20px
+		.post h5
+			font-size: 14px
+			line-height: 18px
+			display: -webkit-box
+			-webkit-line-clamp: 1
+			-webkit-box-orient: vertical
+			overflow: hidden
+		.button-prev,
+		.button-next
+			display: none
+		.fancybox
+			display: block
+			background: url(../img/btn-fancybox.svg) no-repeat
+			background-size: 100%
+			font-size: 0
+			width: 21px
+			height: 16px
+			position: absolute
+			bottom: 45px
+			right: 30px
+			z-index: 1
+		.post-text
+			font-size: 12px
+			line-height: 16px
+			.item
+				height: 50px
+				padding: 10px 10px 13px
+				&:first-child
+					width: 100%
+				&:last-child
+					display: none
+		.post
+			height: auto
+			.post-time
+				bottom: 6px
+				left: 10px
+	.stock-block
+		.item
+			display: block
+			width: 48%
+			.text
+				width: 100%
+				p
+					display: none
+			.img img
+				width: auto
+				max-height: 135px
+		h3
+			font-size: 25px
+			margin: 0 0 20px
+	.stories-section
+		padding: 0 15px
+	.news-boxes-links
+		margin: 0
+		.item .img
+			width: 50%
+		h3
+			font-size: 45px
+			line-height: 45px
+			margin: 0 0 15px
+	.news-boxes-links.other-boxes
+		.item
+			width: 100%
+	.news-boxes-links.only-one
+		.item
+			flex-wrap: wrap
+			.text,
+			.img
+				width: 100%
+			.img
+				order: -1
+	.news-boxes-links.other-boxes .item .text
+		padding: 90px 15px
+	.news-boxes-links .item.vertical .text
+		padding-left: 15px
+	.news-boxes-links.only-one .item .text
+		padding: 20px 15px
+	.news-boxes-links.other-boxes .item,
+	.news-boxes-links.only-one .item,
+	.news-boxes-links .item.vertical
+		.text
+			text-align: center
+			padding: 30px 15px
+			p
+				max-width: 100%
+	.news-boxes-links.only-one .item .btn
+		margin: 0
+	.news-boxes-links.other-boxes .only-picture .img
+		height: 540px
+	#wrapper .container .odContent .odNeeds.news-slider .content .post .description
+		display: none
+	#wrapper .container .odContent .odNeeds.news-slider .content .post .btn
+		width: 100%
+		font-size: 14px
+	#wrapper .container .odContent .odNeeds.news-slider .content .post .title
+		font-size: 16px
+		line-height: 21px
+	#wrapper .container .odContent .odNeeds.news-slider .content .post .image
+		height: 158px
+	#wrapper .container .odContent .odNeeds.news-slider .content .news-slider-next, 
+	#wrapper .container .odContent .odNeeds.news-slider .content .news-slider-prev
+		top: 54px
+	.visual-section
+		margin: 0 0 20px
+		h1
+			font-size: 35px
+			line-height: 37px
+		.inner-text
+			max-width: 445px
+	.news-description-block
+		flex-wrap: wrap
+		padding: 0 15px
+		.content-block,
+		.aside-block
+			width: 100%
+		.aside-block
+			display: none
+			&.mobile
+				display: flex
+				justify-content: space-between
+				.banner
+					width: 33.3%
+					margin: 0 0 36px
+					&-info
+						width: 100%
+						margin: 0
+		.title
+			line-height: 26px
+		.new
+			p
+				margin: 0 0 25px
+			.post-info
+				.icon-dislike,
+				.icon-like,
+				.icon-view
+					margin-left: 20px
+	.news-description-block .new:first-child .post-info
+		padding: 10px 0
+	.bg-pink-box,
+	.bg-gray-box
+		.title
+			margin: 0 0 20px
+		.inner-text
+			flex-wrap: wrap
+			.image,
+			.text
+				width: 100%
+			.image
+				height: auto
+				margin: 0 0 34px
+	.bg-gray-box
+		padding-top: 50px
+	.bg-gray-box .inner-text .image
+		display: none
+	.news-gallery img
+		margin: 0 5px 5px 0
+		max-width: 180px
+		max-height: 115px
+	#wrapper .container .odContent .brave-faith-section .odEvent
+		margin-top: 36px
+	#wrapper .container .odContent .brave-faith-section .odEvent .pattern
+		display: none
+	#wrapper .container .odContent .brave-faith-section .odEvent .content .description p
+		line-height: 22px
+	.blog-slider .description,
+	#wrapper .container .odContent .blog-section .pattern
+		display: none
+	.blog-slider .text-container
+		padding: 11px 0 0
+	#wrapper .container .odContent .odNeeds.blog-slider .content .post .title
+		margin-bottom: 5px
+	.blog-section
+		padding: 0 0 5px
+	.blog-slider
+		.blog-slider-prev,
+		.blog-slider-next
+			display: none
+	#wrapper .container .odContent .odNeeds.needs-top .swiper,
+	#wrapper .container .odContent .odNeeds.needs-top-2 .swiper,
+	#wrapper .container .odContent .odNeeds.news-slider .swiper
+		margin: 0
+	#wrapper .container .odContent .odNeeds.needs-top .content .needs-prev,
+	#wrapper .container .odContent .odNeeds.needs-top .content .needs-next,
+	#wrapper .container .odContent .odNeeds.needs-top-2 .content .needs-prev-2,
+	#wrapper .container .odContent .odNeeds.needs-top-2 .content .needs-next-2,
+	#wrapper .container .odContent .odNeeds.news-slider .content .news-slider-prev,
+	#wrapper .container .odContent .odNeeds.news-slider .content .news-slider-next,
+	.news-boxes .news-boxes-prev,
+	.news-boxes .news-boxes-next
+		display: none
+	.blog-slider-pagination,
+	.needs-pagination,
+	.needs-pagination-2
+		display: block
+		text-align: center
+		margin: 20px 0
+		.swiper-pagination-bullet
+			width: 11px
+			height: 11px
+			border: 1px solid #6b3267
+			background: #fff
+			border-radius: 0
+			opacity: 1
+		.swiper-pagination-bullet-active
+			background: #6b3267
+		.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+			margin: 0 1px
+	.brave-faith-section .odEvent .btn
+		margin: 0
+		font-size: 16px
+	.brave-faith-section .promo
+		padding: 37px 0 0
+	.promo .bf-info .mark
+		font-size: 14px
+		line-height: 18px
+	.brave-faith-section .promo .title
+		margin: 0 0 8px
+	#wrapper .container .odContent .brave-faith-section .promo .odBraveFaith .bf-section.right .bf-image
+		height: auto
+		overflow: visible
+	#wrapper .container .odContent .brave-faith-section .promo .odBraveFaith .bf-section .bf-info
+		margin-top: -260px
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section.right .bf-image .smile-1, 
+	.promo .bf-image .smile-1,
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section.right .bf-image .smile-2, 
+	.promo .bf-image .smile-2
+		height: auto!important
+		width: 56px
+	#wrapper .container .odContent .brave-faith-section .odBraveFaith .bf-section.right .bf-image .smile-1, 
+	.promo .bf-image .smile-1
+		top: -16px
+	#wrapper .container .odContent .brave-faith-section .odBraveFaith .bf-section.right .bf-image .smile-2, 
+	.promo .bf-image .smile-2
+		right: -23px
+		bottom: -19px
+	#wrapper .container .odContent .brave-faith-section .promo .odBraveFaith .bf-description.mobile
+		line-height: 25px
+		margin: 11px 0 25px
+	.article-column,
+	.accordion
+		font-size: 14px
+		line-height: 25px
+		.title
+			margin: 25px 0 22px
+			&:first-child
+				font-size: 16px
+				line-height: 21px
+				margin: 0 0 17px
+		p
+			margin: 0 0 10px
+		.image-text-1
+			width: 110px
+			margin: 0 -10px 0 10px
+		.list
+			margin: 20px 13px
+	.accordion
+		li>p
+			margin: 0
+	.form-column,
+	.give-section .form-column
+		font-size: 14px
+		line-height: 25px
+		padding: 38px 30px
+		.title
+			margin: 0 0 18px
+		.start-text
+			margin: 0 0 13px
+		.text-short
+			margin: 17px 0
+		p
+			margin: 13px 0
+	.user-form
+		.mark
+			font-size: 14px
+			line-height: 25px
+		input
+			line-height: 31px
+			&::-webkit-input-placeholder
+				font-size: 16px
+			&::-moz-placeholder
+				font-size: 16px		
+			&:-moz-placeholder
+				font-size: 16px		
+			&:-ms-input-placeholder
+				font-size: 16px
+	.custom-checkbox
+		margin: 25px 0 14px
+		.checkbox-container
+			font-size: 14px
+			line-height: 25px
+			margin-bottom: 9px
+	#wrapper .container .odContent .odBraveFaith .bf-section.right .particles-mobile
+		display: block
+		position: absolute
+		top: 34%
+		right: 9%
+		max-width: 70px
+		max-height: 255px
+	#wrapper .container .odContent .brave-faith-section .odDouble .odStories
+		.title
+			margin-bottom: 25px
+		.post
+			.title
+				font-size: 16px
+				line-height: 21px
+				margin: 0 0 16px
+			.image
+				display: none
+				&.mobile
+					display: block
+					margin-right: 25px
+			.text
+				width: 100%
+			.new
+				display: flex
+				justify-content: space-between
+				padding-right: 15px
+				margin-bottom: 30px
+				&:nth-child(2n)
+					padding-right: 0
+					padding-left: 15px
+					.image.mobile
+						margin-right: 0
+						margin-left: 25px
+					.inner-text
+						order: -1
+			p
+				margin: 0 0 15px
+		.btn.more
+			display: block
+			width: 239px
+			margin: 0 auto
+	#wrapper .container .odContent .odDouble .odPrayers.pink-block
+		padding: 15px 30px 50px
+		margin-bottom: 15px
+	.brave-faith-section:last-child
+		margin-bottom: -40px
+	#wrapper .container .odContent .brave-faith-section:last-child .odDouble .odPrayers.pink-block
+		margin-bottom: 0
+	.btn-go
+		padding: 0 15px
+	.basket-form
+		.basket-list
+			.basket-title-description
+				display: none
+			li
+				flex-wrap: wrap
+				padding: 22px 15px
+				min-height: 176px
+				position: relative
+			.basket-product
+				width: 20%
+			.basket-description
+				display: flex
+				justify-content: space-between
+				align-items: center
+				width: 76%
+				.color-text
+					margin: 0
+			.basket-quantity
+				width: 100%
+			.basket-total
+				position: absolute
+				top: 22px
+				right: 15px
+				min-height: 113px
+				margin: 0
+				.price
+					right: 0
+			.wrap-img
+				width: 73px
+				height: 73px
+				img
+					width: 100%
+					height: 100% !important
+					object-fit: cover
+			.title
+				font-size: 14px
+				line-height: 14px
+				margin: 0 0 7px
+			.custom-checkbox
+				margin: 0 0 15px
+				&.size
+					margin: 0 -3px 13px
+			.basket-del
+				width: 13px
+				height: 13px
+		.basket-result
+			padding: 0 15px
+			.btn
+				width: 167px
+				font-size: 16px
+				text-align: center
+		.price-result
+			padding: 23px 0 7px
+	.product-info-section
+		flex-wrap: wrap
+		margin-bottom: 30px
+		.product-info-slider
+			width: 100%
+			.icon-like
+				left: auto
+				top: 21px
+				right: 23px
+			.swiper-pagination
+				bottom: -33px
+		.product-info-text
+			padding: 42px 15px 17px
+			.title ~ p
+				display: none
+			.basket-form
+				.basket-list
+					color: #21150B
+					li
+						padding: 5px 0
+					.basket-description
+						flex-wrap: wrap
+						width: 100%
+						.color-text
+							margin: 0 0 14px
+					.custom-checkbox.size
+						margin: 0 10px 51px
+					.basket-total
+						min-height: 100%
+						top: auto
+						bottom: 10px
+						right: -15px
+						.price
+							right: 15px
+				.basket-result
+					padding: 11px 0
+					.btn
+						width: 165px
+						&.more
+							text-align: center
+			.text.mobile
+				width: 100%
+	.goods-card .btn-go
+		margin: 20px 0 -47px
+		position: relative
+		z-index: 10
+	.goods-slider
+		.goods-post
+			width: auto
+			max-width: 267px
+			.image
+				height: 220px
+				a
+					.custom-checkbox-list
+						bottom: 10px
+						margin: 0
+			.text-container
+				text-align: center
+				padding: 13px 5px
+				.description
+					display: none
+			.title
+				font-size: 16px
+				line-height: 21px
+			.custom-checkbox-list
+				justify-content: center
+				margin: 0 0 15px
+			.price
+				position: static
+				padding: 0
+				.price-new
+					font-size: 16px
+					line-height: 16px
+				.price-old
+					font-size: 12px
+	#wrapper .container .odContent .promo .odBraveFaith .bf-section .bf-info .bf-description.first-text
+		display: block
+	#wrapper .container .odContent .letter-writing-section .promo .odBraveFaith .bf-section.right .bf-image
+		overflow: visible
+		margin: 0 0 15px
+	#wrapper .container .odContent .letter-writing-section .odBraveFaith .bf-section.right .bf-image .smile-2
+		right: -20px
+		top: auto
+		bottom: -20px
+	#wrapper .container .odContent .letter-writing-section .odBraveFaith .bf-section.right .bf-image .smile-1
+		bottom: auto
+		top: -15px
+		left: -33px
+	.letter-writing-section .promo .title
+		margin: 0 0 6px
+	#wrapper .container .odContent .letter-writing-section .promo .odBraveFaith .bf-section .bf-info .bf-description,
+	#wrapper .container .odContent .letter-writing-section .promo .odBraveFaith .bf-description
+		line-height: 25px
+		margin: 0 0 20px
+	#wrapper .container .odContent .letter-writing-section .promo .odBraveFaith .bf-section .bf-info .bf-description.first-text
+		margin: 0 0 15px
+	#wrapper .container .odContent .letter-writing-section .promo
+		margin: 0 0 20px
+	.getting-started
+		line-height: 25px
+		padding: 0 15px
+		margin-bottom: 70px
+		.title
+			margin: 0 0 45px
+			text-align: center
+		.text
+			text-align: left
+			padding-top: 13px
+		.btn
+			display: block
+			margin: 0 auto
+			&.more
+				margin: 0
+				width: 208px
+	.custom-mark-list
+		width: 100%
+		line-height: 18px
+		margin: 30px 0
+		li
+			margin: 0 0 35px
+		.title
+			font-size: 16px
+			line-height: 21px
+			margin: 0 0 14px 15px
+			&:before
+				width: 44px
+				height: 44px
+	.odPrayers.pink-block .shot-text
+		p
+			max-width: 260px
+		.stamps
+			right: -10px
+	.modal-text-block
+		.title,
+		p
+			margin: 0 0 25px
+	p.list-mark
+		margin: 0 0 10px 6px
+	.letter-box
+		margin: 34px 0
+		.inner-text
+			padding: 20px
+			p
+				margin: 0 0 25px
+				&:last-child
+					margin-bottom: 6px
+		.stamps
+			width: 153px
+			top: auto
+			bottom: -60px
+			right: -35px
+	.give-form
+		padding: 26px 15px
+		.title,
+		.card-info ul
+			font-size: 16px
+			line-height: 20px
+		.title
+			margin: 0
+		.card-info
+			margin: 0 0 20px
+		.card-info-form .item
+			&:first-child,
+			&:last-child
+				width: 100%
+				padding: 30px 0 0
+			&:first-child
+				padding: 0
+	.note-block
+		padding: 0 15px
+		p
+			margin-bottom: 36px
+		.subtitle-note
+			height: 131px
+			padding: 22px 15px
+	.give-section .columns-info
+		margin-top: 0
+	.user-form.category
+		margin-top: 30px
+	.user-form.category .category-text
+		font-size: 16px
+		line-height: 24px
+	.user-form.category .custom-select span
+		min-width: 365px
+	.user-form.category .small-text
+		font-size: 10px
+		line-height: 18px
+	.user-form.category p.mark
+		font-size: 14px
+		line-height: 25px
+		margin-bottom: 21px
+	.article-column .smile-1
+		display: none
+	.article-column p.list-mark
+		margin-left: 10px
+	.blockquote
+		padding: 0
+	#wrapper .container .odContent .give-section .odBraveFaith
+		padding-top: 162px
+		&:last-child
+			margin-bottom: -40px
+	#wrapper .container .odContent .give-section .odBraveFaith .bf-logo
+		top: 169px
+		left: 70%
+	.btn.inverted
+		font-size: 16px
+	#wrapper .container .odContent .give-section .odBraveFaith .bf-section.right .bf-info
+		margin-bottom: 20px
+		width: 100%
+		max-width: 50%
+	#wrapper .container .odContent .give-section .odBraveFaith .bf-section .bf-info
+		max-width: 250px
+		margin: 0 0 0 auto
+	.no-mobile
+		display: none
+	#wrapper .container .odContent .pray-section .promo .odBraveFaith .bf-section .bf-info .bf-description,
+	#wrapper .container .odContent .pray-section .promo .odBraveFaith .bf-description.mobile
+		line-height: 25px
+		font-weight: normal
+		&.mark
+			display: block
+	.bf-description.mark
+		color: #f47a87
+		&.mobile
+			margin: 0 0 24px
+	#wrapper .container .odContent .pray-section .promo .odBraveFaith .bf-description.mark
+		margin: 0
+	#wrapper .container .odContent .pray-section .promo .odBraveFaith .bf-description.mobile
+		margin: 0 0 24px
+	#wrapper .container .odContent .pray-section .promo .odBraveFaith .bf-section.right .bf-image
+		margin: 0 0 10px
+	.news-collection
+		margin: 0 0 6px
+		.title
+			margin: 0 0 12px
+		.posts
+			padding: 0 15px
+			.post
+				width: 49%
+				margin: 0
+			.date,
+			.title
+				font-size: 12px
+				line-height: 19px
+			.date
+				margin: 0
+			.image
+				margin: 0 0 4px
+			.description,
+			.btn
+				display: none
+	.ranking-list
+		column-count: 2
+		column-fill: auto
+		height: 150px
+		li
+			padding-top: 7px
+			&:before
+				top: 0
+	.goods-post-collection .goods-post
+		width: 50%
+		max-width: 207px
+		margin: 0 auto
+	.secret-section .promo
+		padding: 14px 0 8px
+	.secret-section .promo .bf-info .mark
+		line-height: 21px
+		text-transform: none
+	.secret-section .promo .bf-info p
+		margin: 0 0 20px
+	#wrapper .container .odContent .secret-section .odBraveFaith .bf-section.right .bf-image .smile-1
+		top: -24px
+		left: -26px
+	#wrapper .container .odContent .secret-section .odBraveFaith .bf-section.right .bf-image .smile-2
+		right: 17px
+		bottom: -23px
+	#wrapper .container .odContent .secret-section .promo .odBraveFaith .bf-description.mobile
+		line-height: 21px
+		margin: -4px 0 21px
+	.download-block
+		line-height: 21px
+		margin-bottom: 80px
+		.title
+			margin: 0 0 16px
+		p
+			margin: 0 0 21px
+	.comment-block
+		margin: 32px 0 81px
+		.text
+			width: 100%
+			padding: 0 15px
+			font-size: 14px
+			line-height: 21px
+			.title
+				text-align: center
+				margin: 0 0 22px
+			.smile-1
+				display: none
+		p
+			margin: 0 0 21px
+		.image
+			width: 220px
+			height: 218px
+			padding: 7px
+			margin: 0 auto 20px
+			order: -1
+			position: relative
+			.smile-1
+				position: absolute
+				width: 70px
+				height: auto !important
+				top: 104px
+				left: -34px
+	#wrapper .container .odContent .secret-section .odNeeds.news-slider
+		margin-bottom: 53px
+	.brave-faith-section .promo.left-image .odBraveFaith
+		display: flex
+		justify-content: space-between
+	#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .bf-section .bf-info
+		margin: 0
+		padding-left: 15px
+	#wrapper .container .odContent .promo.left-image .odBraveFaith .bf-section.right
+		width: 100%
+		order: -1
+	#wrapper .container .odContent .promo.left-image .odBraveFaith .bf-section .bf-info .bf-description
+		display: block
+	#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .bf-section .bf-image
+		width: 150px
+		margin: 0 0 0 auto
+	.brave-faith-section .promo.left-image
+		padding: 14px 0 23px
+	#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .bf-section .bf-info .bf-description
+		line-height: 21px
+	#wrapper .container .odContent .brave-faith-section .promo.left-image .odBraveFaith .bf-section .bf-image .smile-1
+		width: 70px
+		bottom: -33px
+		left: 50%
+		transform: translateX(-50%)
+	.nano-section .columns-info
+		margin-bottom: 30px
+	#wrapper .container .odContent .promo.left-image .odBraveFaith
+		min-height: auto
+	.brave-faith-block
+		padding: 15px 15px 40px
+		.text
+			width: 100%
+			padding: 0
+			.description
+				max-width: 100%
+		.image
+			width: 345px
+			height: 153px
+			margin: 0 auto 20px
+			order: -1
+			img
+				display: none
+				&.mobile
+					display: block
+		.title
+			font-size: 20px
+			line-height: 26px
+			margin: 0 0 12px
+		.notes
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			.subtitle-note
+				width: 48%
+				height: fit-content
+				padding: 22px 10px
+				margin: 0 0 40px
+			.btn, .subtitle-note.last
+				position: relative
+				left: auto
+				bottom: auto
+				margin-left: 0
+			.subtitle-note.last
+				margin: -50px 0 35px
+			.btn
+				margin: 0 auto
+		.bf-logo
+			display: none
+	.blockquote-box
+		margin-left: 15px
+		margin-right: 15px
+	.sign-up-block
+		margin-bottom: 83px
+		.text
+			width: 100%
+			padding: 0 15px
+		.image
+			display: none
+		.title
+			line-height: 26px
+			margin: 0 0 15px
+		p
+			margin: 0 0 15px
+	.comment-block.other
+		margin-bottom: 57px
+		.text
+			line-height: 21px
+			.title
+				text-align: left
+				margin: 0 0 14px
+		.image
+			width: 344px
+			height: 340px
+			.smile-1
+				display: none
+		.author
+			text-align: left
+			margin: 0 0 22px
+	.blockquote-box
+		font-size: 14px
+		line-height: 22px
+		padding: 47px 20px 21px
+		margin-bottom: 57px
+		&:before
+			font-size: 25px
+			top: 22px
+		blockquote
+			font-size: 14px
+			line-height: 22px
+			margin: 0 0 18px
+	.mark-list
+		line-height: 21px
+		margin: 0 0 13px
+	#wrapper .container .odContent .odDouble.full-odPrayers .odPrayers .image, 
+	.full-odPrayers .odPrayers .image
+		width: 100%
+		height: 311px
+	#wrapper .container .odContent .odDouble.full-odPrayers .odPrayers .image .smile-1, 
+	.full-odPrayers .odPrayers .image .smile-1
+		top: 59px
+		right: 4px
+		width: 68px
+	#wrapper .container .odContent .odDouble.full-odPrayers .odPrayers .content, 
+	.full-odPrayers .odPrayers .content
+		width: 100%
+		padding: 13px 0 0
+	.odPrayers-purple-block
+		padding: 24px 35px 51px 30px
+		.logo-block
+			margin-bottom: 18px
+		.title
+			font-size: 20px
+			margin: 0 0 33px
+		.list
+			margin: 0 0 38px
+			li
+				margin: 0 0 30px
+		.text-list
+			padding-left: 18px
+			a
+				font-size: 14px
+				.icon
+					width: 19px
+					margin: 0 5px 0 -5px
+	.modal .gallery-slider .post-text .item
+		padding: 10px 15px
+		height: auto
+		&:first-child
+			width: 50%
+		&:last-child
+			display: block
+	.modal .gallery-slider .post .post-time
+		left: 15px
+
+@media only screen and (max-width:500px)
+	.map-info
+		padding-bottom: 6px
+	.video-block
+		.video
+			height: 197px
+		.text
+			padding-top: 218px
+		h3
+			font-size: 16px
+			line-height: 21px
+			margin: 0 0 10px
+		.mark
+			margin: 6px 0 16px
+	.videoblog-section
+		padding: 30px 0 0
+		.gallery-slider
+			padding: 18px 15px 81px
+			.slider-title
+				display: none
+			.mySwiper2
+				margin: 0
+			.mySwiper
+				padding: 0 30px
+				background: none
+				.swiper-slide
+					padding: 0!important
+			.img
+				height: 111px
+		&.bg-purple .gallery-slider .mySwiper
+			background: none
+	#wrapper .container .odContent .odNeeds.blog-slider
+		margin-top: 30px
+	#wrapper .container .odContent .odNeeds.blog-slider .content,
+	#wrapper .container .odContent .odNeeds .content,
+	#wrapper .container .odContent .odNeeds.needs-top .content
+		margin-top: 20px
+	#wrapper .container .odContent .odNeeds.needs-top-2
+		margin-top: 69px
+	.act-section .title
+		margin: 0 0 20px
+	.news-boxes-links,
+	.news-boxes-links.other-boxes
+		.item
+			font-size: 12px
+			line-height: 22px
+			height: 210px
+			margin: 0 0 27px
+			overflow: hidden
+			.text
+				width: 72%
+				padding: 20px 15px
+				text-align: left
+			.img
+				width: 28%
+				min-height: 210px
+			h3,
+			&.title
+				font-size: 16px
+				line-height: 16px
+			&.vertical
+				.img
+					width: 28%
+					height: 210px
+					img
+						display: none
+					.img-mobile
+						display: block
+				.text
+					width: 72%
+					padding: 20px 15px
+					text-align: left
+					order: -1
+			.btn
+				min-width: 167px
+				font-size: 16px
+		&.only-one
+			.item
+				h3
+					font-size: 16px
+					.mark
+						padding: 3px 3px 0
+				.img
+					width: 28%
+					min-height: 210px
+					order: -1
+					img
+						display: none
+					.img-mobile
+						display: block
+				.text
+					width: 72%
+					text-align: left
+					padding: 20px 15px
+		h3,
+		&.title
+			font-size: 16px
+			line-height: 16px
+			a span
+				display: inline-block
+				text-transform: uppercase
+			.bf-logo
+				display: none
+	.news-boxes-links.other-boxes 
+		.item
+			&.only-picture
+				.img
+					width: 100%
+					height: 210px
+					img
+						display: none
+					.img-mobile
+						display: block
+				.text
+					width: 65%
+					padding: 20px 15px
+				h3,
+				&.title
+					font-size: 16px
+					line-height: 16px
+	.stock-block
+		.item
+			min-height: 175px
+			.img
+				bottom: 0
+				img
+					max-height: 74px
+			.btn
+				min-width: 139px
+				height: 32px
+				font-size: 16px
+				line-height: 32px
+		h3
+			font-size: 14px
+			line-height: 21px
+			margin: 0 0 11px
+		.icon-stock
+			right: 45px
+			width: 53px
+			height: 53px
+			font-size: 12px
+			line-height: 12px
+			padding: 23px 9px
+	#wrapper .container .odContent .odNeeds.blog-slider .content .post .image
+		height: 108px
+	#wrapper .container .odContent .odNeeds.blog-slider .content .post .title
+		font-size: 12px
+		margin-bottom: 0
+	#wrapper .container .odContent .odNeeds .swiper
+		margin: 0 24px
+	.blog-slider .text-container
+		padding: 3px 0 0
+	.blog-slider .post-info,
+	.blog-slider .post-info .icon-view
+		font-size: 12px
+		line-height: 14px
+	.blog-slider .post-info .icon-dislike, 
+	.blog-slider .post-info .icon-like, 
+	.blog-slider .post-info .icon-view
+		margin-left: 7px
+	.visual-section
+		.visual-image
+			min-height: 232px
+			object-fit: cover
+		.btn-back
+			padding: 0 0 0 13px
+			&:before
+				width: 7px
+				height: 16px
+		.stayInTouch
+			top: 14px
+			right: 23px
+			li
+				margin: 0 0 6px
+			svg
+				width: 16px
+		.inner-text
+			bottom: 23px
+			max-width: 210px
+			.top-text
+				font-size: 12px
+				line-height: 22px
+				padding-left: 14px
+				margin: 0 0 8px
+				img
+					top: 3px
+		h1
+			font-size: 16px
+			line-height: 19px
+		.list-links
+			justify-content: center
+			font-size: 12px
+			line-height: 22px
+			padding: 3px
+			li
+				margin: 0 1px
+	.news-description-block
+		.new
+			.post-info
+				flex-wrap: wrap
+				font-size: 12px
+				line-height: 19px
+				padding: 0
+				.icon-view,
+				.icon-like,
+				.icon-dislike
+					margin-left: 30px
+				.design
+					font-size: 14px
+					line-height: 22px
+			&:first-child
+				.post-info
+					padding-top: 2px
+					.item
+						width: 100%
+						&:last-child
+							justify-content: flex-start
+					.design
+						font-size: 12px
+						line-height: 19px
+		.aside-block
+			.banner
+				text-align: left
+				&-info
+					padding: 15px
+		.banner-list
+			column-count: 3
+			height: 130px
+			margin: 0 0 10px
+	.news-inner-section ~ .blog-section
+		padding: 0 0 40px
+	.bg-pink-box
+		background: url(../img/bg-pink-box-mob.jpg) no-repeat
+		background-size: cover
+		padding: 31px 15px 46px
+		margin-bottom: 0
+		.inner-text
+			.image
+				height: 170px
+			.text .boxes .box
+				padding: 30px 20px 15px
+	.bg-gray-box
+		background: url(../img/bg-gray-mob.jpg) no-repeat
+		background-size: cover
+		margin: 0
+		.title
+			text-align: center
+		.inner-text
+			.list li
+				width: 80%
+			.btn
+				width: 139px
+				font-size: 16px
+	.news-gallery img
+		max-width: 135px
+		max-height: 82px
+	#wrapper .container .odContent .brave-faith-section .odEvent .video .video-container
+		height: 227px
+	#wrapper .container .odContent .brave-faith-section .promo .odBraveFaith .bf-section.right .bf-image
+		height: 175px
+	#wrapper .container .odContent .brave-faith-section .promo .odBraveFaith .bf-section .bf-info
+		margin-top: -173px
+	#wrapper .container .odContent .odDouble .odPrayers.pink-block
+		.image
+			height: 145px
+			margin-bottom: 16px
+			img
+				width: 100%
+				height: 100%!important
+				object-fit: cover
+	.product-info-slider .swiper-slide img
+		height: 356px !important
+	.added-goods-modal
+		width: 100%
+	.odPrayers.pink-block .shot-text .stamps
+		top: 60px
+		right: -35px
+	.user-form.category .custom-select span
+		min-width: 345px
+	.user-form.category .category-text
+		width: 273px
+	.goods-post-collection
+		margin: 0
+		.goods-post
+			max-width: 163px
+			padding: 0 5px 10px
+			.image
+				height: 196px
+			.title
+				font-size: 16px
+				line-height: 21px
+	.goods-slider .goods-post .price .price-new, 
+	.goods-post-collection .goods-post .price .price-new
+		font-size: 16px
+		line-height: 26px
+	.goods-slider .goods-post .price .price-old, 
+	.goods-post-collection .goods-post .price .price-old
+		font-size: 12px
+	.goods-slider-collection .pagination
+		a
+			min-width: 25px
+		.prev a,
+		.next a
+			background-size: 16px
+	#wrapper .container .odContent .odDouble.full-odPrayers .odPrayers .image, 
+	.full-odPrayers .odPrayers .image
+		height: 311px
+	.product-info-section .product-info-text .basket-form .basket-result
+		display: flex
+		justify-content: center
+	.product-info-section .product-info-text .basket-form .basket-result .btn
+		width: 170px
+	.user-form input
+		width: 100%
+	.modal-text-block
+		padding: 15px
+		font-size: 14px
+		line-height: 25px
+		.title
+			font-size: 16px
+			line-height: 21px
+	.modal .gallery-slider
+		padding: 0
+	.modal .gallery-slider .post
+		height: auto
+		margin: 0 0 15px
+	.modal .gallery-slider .img
+		height: 129px
+	.modal .gallery-slider .post-text,
+	.modal .gallery-slider .post h5
+		font-size: 14px
+		line-height: 18px
+	.modal .gallery-slider .post .post-time
+		bottom: 12px
+		left: 15px
